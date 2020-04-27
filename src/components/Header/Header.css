@@ -1,0 +1,11 @@
+.Header{
+    display: flex;
+    /* justify-content: center; */
+}
+.mr-auto{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    height: 55px;
+}
