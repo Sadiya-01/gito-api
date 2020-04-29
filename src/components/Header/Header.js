@@ -8,7 +8,7 @@ import { Navbar, Nav } from 'react-bootstrap';
                 <Navbar bg="white" fixed="top" expand="lg" >
                     <Navbar.Collapse className="justify-content-left">
                         <Nav>
-                            <img src={require('../images/logo.png')} className="logo-image" alt=" Gito.me" fluid />
+                            <img src={require('../images/logo1.png')} className="logo-image" alt=" Gito.me" fluid />
                             <Nav.Link  className="link-style "  Link to="" target="_blank">About Us</Nav.Link>
                         </Nav>
                         </Navbar.Collapse>
