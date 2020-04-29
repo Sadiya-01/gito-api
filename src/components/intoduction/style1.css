@@ -69,8 +69,8 @@ position: fixed;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  font-size: medium;
-  text-align: left;
+  /* font-size: medium; */
+  /* text-align: left; */
   
 }
 
@@ -105,7 +105,7 @@ position: fixed;
 .col{
   /* text-align: center; */
       text-decoration: none;
-      font-size:larger;
+      /* font-size:larger; */
       flex-basis: 0;
       flex-grow: 1;
       max-width: 100%;
@@ -138,7 +138,7 @@ position: fixed;
 
 .Mod{
     text-align: left;
-    font-size:medium;
+    /* font-size:medium; */
 }
 .mod p{
     text-align: center;
@@ -157,7 +157,7 @@ position: fixed;
 }
 .title{
   text-align: center;
-  font-size: medium;
+  /* font-size: medium; */
   font-weight: bold;
   background-color: #a6a3a0;
   text-transform: uppercase;
