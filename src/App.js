@@ -5,8 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react'
 import Dump from './components/assets/index';
 import Header from './components/Header/Header';
-import Footer from './components/footer';
+import Footer from './components/footer/footer';
 import Authentication from './components/intoduction/home';
+
  class App extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ import Authentication from './components/intoduction/home';
             <Authentication/>
             <Dump/>
             <Footer/>
+            
       </div>
     )
   }

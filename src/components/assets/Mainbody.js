@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // import data from './dump.json'
 import Axios from 'axios'
 import { Table } from 'react-bootstrap';
+import '../assets/main.css';
 
 class Mainbody extends Component {
     constructor(props){ 
@@ -56,16 +57,20 @@ class Mainbody extends Component {
                                     <div style={{paddingTop: '5px'}} id={`mbData${mbData.id}`} ref={el => (this.idRefs[mbData.id] = el)}>
                                         <h1>{mbData.module}</h1>
                                         <div className="Mod">
+                                            <div className="title">
                                                 <p>{mbData.title}</p>
-                                                <p>{mbData.details.description}</p>
-                                                <p>{mbData.details.method}</p>
-                                                <p>{mbData.details.url}</p>
+                                                </div>                                             
+                                                <p><b>DESCRIPTION :</b>{mbData.details.description}</p>
+                                                <p><b>METHOD :</b>{mbData.details.method}</p>
+                                                <p><b>URL :</b>{mbData.details.url}</p><br></br>
                                          </div>
                                             {
                                             Object.keys(mbData.details).map((key) => 
-                                                <div>
-                                                    {key == 'Method Parameters'?
-                                                        <Table striped bordered hover variant="light " size="sm">
+                                                <div className="method">
+                                                
+                                                    {key == 'Method Parameters'? 
+                                                    
+                                                        <Table  striped bordered hover variant="light">
                                                             <thead>
                                                                 <tr>{key}</tr>
                                                             </thead>
@@ -91,10 +96,10 @@ class Mainbody extends Component {
                                                     :null}
 
                                               {/* </div> */}
-                                                    {
+                                                    
                                                         <div className="query">                         
                                                                     {key == 'Query Parameters'?
-                                                                        <Table striped bordered hover variant="dark"  size="sm">
+                                                                        <Table striped bordered hover variant="light">
                                                                             <thead> 
                                                                                 <tr>{key}</tr>
                                                                             </thead>
@@ -121,17 +126,18 @@ class Mainbody extends Component {
                                                                      </Table>
                                                                 :null}
                                                         </div>
-                                                    }
-                                                    {
+                                                    
+                                                    
                                                             <div>
                                                                 
                                                                 {key == 'Request Parameters'?
-                                                                <Table striped bordered hover variant="light"  size="sm">
+                                                                <Table  striped bordered hover variant="light">
                                                                  <thead> 
                                                                      <tr>{key}</tr>
                                                                 </thead>
                                                                         <tbody>
                                                                         {mbData.details[key].map((paramDet, l)=>
+                                                                            <>
                                                                             <>
                                                                             <tr>
                                                                                 <td>Parameter :</td>
@@ -146,6 +152,7 @@ class Mainbody extends Component {
                                                                                  <td>{paramDet.type}</td>
                                                                                  </tr>
                                                                             </>
+                                                                            </>
                                                                         )}
                                                                         </tbody>
                                                                     </Table>
@@ -153,8 +160,8 @@ class Mainbody extends Component {
                                                                 
                                                             </div>
 
-                                                        }
-                                                    }
+                                                    
+                                                    
                                                 </div>
                                             )
                                         }

@@ -9,11 +9,10 @@ import { Navbar, Nav } from 'react-bootstrap';
                     <Navbar.Collapse className="justify-content-left">
                         <Nav>
                             <img src={require('../images/logo.png')} className="logo-image" alt=" Gito.me" fluid />
+                            <Nav.Link  className="link-style "  Link to="" target="_blank">About Us</Nav.Link>
                         </Nav>
                         </Navbar.Collapse>
-                        <Navbar.Collapse className="justify-content-center">
-                        <Nav.Link  className="link-style text-center"  href="/">About Us</Nav.Link>
-                    </Navbar.Collapse>
+                       
                 </Navbar>
             </div>
         )
