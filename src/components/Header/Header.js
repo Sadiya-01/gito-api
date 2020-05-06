@@ -5,7 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
     render() {
         return (
             <div>
-                <Navbar bg="white" fixed="top" expand="lg" >
+                <Navbar bg="white"  expand="lg" >
                     <Navbar.Collapse className="justify-content-left">
                         <Nav>
                             <img src={require('../images/logo1.png')} className="logo-image" alt=" Gito.me" fluid />

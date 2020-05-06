@@ -37,7 +37,7 @@ class Sidebar extends Component {
         return (
         <div>
             <div className="sidebar ">
-                <div className="sidebar-style  ">
+                <div className="sidebar-style ">
                     
                        <h4 className="heading" >Introduction</h4>
                             <div className="int">

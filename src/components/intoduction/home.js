@@ -11,7 +11,7 @@ export default class Authentication extends Component {
                                 <p>  Gito brings to life a concept that essentially powers all e-commerce models employed globally into a single hosted platform. Our e-commerce platform provides group commerce capabilities in each of 3 business models utilized within the industry (retail, marketplace, market exchange) that can be used at the discretion of any online seller anywhere!
                          </p>
 
-                                 <div className="auth"  id="1">
+                                 <div className="Authentication"  id="1">
                                         <br></br>
                                         <h3 className= "text-center">INTRODUCTION</h3>
                                 </div>
@@ -19,17 +19,17 @@ export default class Authentication extends Component {
                                           <h4>Authentication - Summary</h4>
                          
                                             <p>Gito's Partners (API Developers) will be provided with a client_id and a client_secret as part of their registration with Gito.</p>
-                                            <p className="">Each API call will be associated to a particular store.As such, each API call will begin with ../V1/ .The partner will have to send the client_id and a client_secret for using in each API call. </p>
+                                            <p className="summary">Each API call will be associated to a particular store.As such, each API call will begin with ../V1/ .The partner will have to send the client_id and a client_secret for using in each API call. </p>
                                                 <br></br>
                                               <h4>IMPORTANT NOTE:</h4>
-                                               <p>
+                                               <p className="note">
                                                     client_id and client_secret are associated with Gito's Partners (API Developers) only.
                                                     The client_id and client_sec ret provided to partners can be used to access data of ALL stores that have granted the partner access.
                                                     There are no separate client_id or client_secret associated with the stores.
                                                     The REST response are in JSON format.
                                              </p>
                                                      <br></br>
-                                                        <div className="col-lg-9" id="2">
+                                                        <div className="string" id="2">
                                                             <br></br>
                                                              <h4>Include by query string</h4>
                                                 
@@ -43,14 +43,14 @@ export default class Authentication extends Component {
                                                             </div>
                                                             <br></br>
                                                             {/* <br></br> */}
-                                                          <div class="col-lg-5 " id="3">
+                                                          <div class="http" id="3">
                                                                 <h4>Allowed HTTPs requests</h4>
                                                                 <p>Method</p>
                                                                 <p>GET Get resource</p>
                                                                 <p>POST To create resource</p>
                                                                 <p>PUt  Update resource</p>
                                                         </div>
-                                                    <div class="col-lg-12" id="4">
+                                                    <div class="disc" id="4">
                                                                 <br></br>
                                                                 <br></br>
                                                                     <h4>Description Of Usual Server Responses</h4>

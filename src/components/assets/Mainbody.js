@@ -70,7 +70,7 @@ class Mainbody extends Component {
                                                 
                                                     {key == 'Method Parameters'? 
                                                     
-                                                        <Table  striped bordered hover variant="light">
+                                                        <Table   striped bordered hover variant="light">
                                                             <thead>
                                                                 <tr>{key}</tr>
                                                             </thead>

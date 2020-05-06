@@ -12,15 +12,18 @@ body{
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 275px;
-  background-color:#333333 ;
+  color: black;
+   background-color: white;
   height: 100%;
   position: fixed;
   margin-top: 80px;
   top: 2px;
+  border: black;
   text-underline-position: below;
   overflow: auto;
   scroll-behavior: auto;
+   /* width: 275px; */
+    /* background-color:#333333 ; */
 }
 
 .sb-btn{
@@ -28,13 +31,15 @@ body{
   width: 100%;
   height: 40px;
   border: none;
-  background: #333333;
+  background-color: white;
   margin-bottom: 1px;
   padding: 5px;
   overflow: auto;
-  color: aliceblue;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   /* font-size: medium;
-  font-weight: 600; */
+  /* background: #333333; */
+  /* font-weight: 600; */
 }
 
 .sidebar-style{
@@ -42,8 +47,10 @@ body{
   padding: 21px;
 }
 
+
+
 .side{
-  background-color: darkgray;
+  /* background-color: darkgray; */
   
 }
 
@@ -54,10 +61,11 @@ position: fixed;
   
 }
 .Main-body {
+  background-color: ghostwhite;
   margin-left: 260px;
   padding-top: 50px;
-  background-color: rgb(251, 249, 249);
-  padding: 62px;
+  /* background-color: rgb(251, 249, 249); */
+  padding: 32px;
   font-family: Arial, Helvetica, sans-serif;
   /* font-weight: 400; */
   width: fit-content;
@@ -69,6 +77,7 @@ position: fixed;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: ghostwhite;
   /* font-size: medium; */
   /* text-align: left; */
   
@@ -76,21 +85,30 @@ position: fixed;
 
 
 .heading{
-  width: 94%;
-  color:white;
-  background-color:  rgb(134, 128, 128);
+  width: 98%;
+  color:black;
+  /* background-color:  rgb(134, 128, 128); */
+  background-color: rgb(222, 234, 245);
 }
 
 
 .header{
    background-color:white;
 }
+p.note{
+  text-align: left;
+}
 
 .intro{
   color:black;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   text-align:left;
-  color: aliceblue;
+  /* color: aliceblue; */
+}
+  a.intro:hover{
+  text-decoration: none;
+  color: #000000;
 }
 
 .int{
@@ -121,7 +139,7 @@ position: fixed;
 }
 
 .logo-image{
-    height: 61px;
+    height: 55px;
     width: auto;
 }
 
@@ -132,9 +150,11 @@ position: fixed;
 }
 
 .key-style{
-  text-align: center;color:white;
+  text-align: center;
+  columns: #000000;;
   /* font-weight:bold; */
-  background-color: rgb(134, 128, 128);
+  /* background-color: rgb(134, 128, 128); */
+  background-color: rgb(222, 234, 245);
 }
 
 .Mod{
@@ -160,7 +180,7 @@ position: fixed;
   text-align: center;
   /* font-size: medium; */
   font-weight: bold;
-  background-color: #a6a3a0;
+  background-color:rgb(222, 234, 245) ;
   text-transform: uppercase;
 }
 .link-style{
@@ -175,4 +195,8 @@ position: fixed;
 a.nav-link {
   font-weight: bold;
   color: black;
+}
+
+a.intro{
+  color: #000000;
 }

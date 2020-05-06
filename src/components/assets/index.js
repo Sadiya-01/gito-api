@@ -17,7 +17,7 @@ class Dump extends Component {
     }
 
     render(){
-        return(
+        return( 
             <div className="side-main">
                 <div className="main">
                 <Sidebar sidebarClicked={this.sideBarClicked} />
