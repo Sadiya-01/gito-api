@@ -54,7 +54,7 @@ class Mainbody extends Component {
                             <div>
                                 <h3>{}</h3>
                                 {mainbodyData[0][key].map((mbData, i)=>
-                                    <div style={{paddingTop: '5px'}} id={`mbData${mbData.id}`} ref={el => (this.idRefs[mbData.id] = el)}>
+                                    <div className="data"  style={{paddingTop: '5px'}} id={`mbData${mbData.id}`} ref={el => (this.idRefs[mbData.id] = el)}>
                                         <h1>{mbData.module}</h1>
                                         <div className="Mod">
                                             <div className="title">
@@ -70,7 +70,8 @@ class Mainbody extends Component {
                                                 
                                                     {key == 'Method Parameters'? 
                                                     
-                                                        <Table   striped bordered hover variant="light">
+                                                        <Table   striped bordered hover variant="light" >
+                                                            
                                                             <thead>
                                                                 <tr>{key}</tr>
                                                             </thead>
@@ -160,12 +161,10 @@ class Mainbody extends Component {
                                                                 
                                                             </div>
 
-                                                    
-                                                    
                                                 </div>
                                             )
                                         }
-                                        {console.log(mbData.details, '123')}
+                                        {/* {console.log(mbData.details, '123')} */}
                                     </div>
                                     
                                 )}

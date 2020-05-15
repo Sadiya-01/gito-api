@@ -1,202 +1,361 @@
-body{
-  text-align: center;
-  margin: 0;
-  word-break: break-all;
+    body{
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      word-break: break-all;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .Main-body {
+    background-color: white;
+    margin-left: 260px;
+    padding-top: 50px;
+    padding: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .sub-main{
+    color: black;
+    text-align: right;
+    padding: 2px;
+    }
+    a.sub-main{
+    justify-content: right;
+    width: 400%;
+    font-size: large;
+    font-weight: 500;
+    }
+    .sub-main:hover{
+    /* color: #556cd6; */
+    color:  black;
+    text-decoration: none;
+    }
+    .Content{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    color: #4f566b;
+    }
+                        /* margin: 20px 0px 24px */
+                        /* background-color: ghostwhite; */
+                        /* font-size: medium; */
+                        /* text-align: left; */
+                        /* margin: 20px 0px 24px */
+    
+
+    .sub-content{
+    color: #2a2f45;
+    padding-left: 7px;
+    }
+    h2.sub-content{
+    display: inline-block;
+    position: relative;
+    }
+    h2.sub-content:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: 0.4s ease-out all .1s;
+    background-color: .5s ease;
+    }
+
+    h2.sub-content:hover:after {
+    width: 100%;
+    background:#2a2f45;
+    }
+
+    h4{
+    /* text-decoration: underline; */
+    color:#2a2f45;
+    }
+
+    h4:hover{
+    color:rgba(5, 4, 4, 0.945);
+    }
+            
+    h4.line-style {
+      display: inline-block;
+      position: relative;
+  }
+
+  h4.line-style:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease;
+    background-color: .5s ease;
+  }
+
+  h4.line-style:hover:after {
+    width: 100%;
+    background:#2a2f45;
+  }
+
+  .title {
+    display: inline-block;
+    position: relative;
 }
 
-.side-main{
-  background-color: white;
-  text-align: center; 
+.title:after {
+  content: '';
+  display:flex ;
+  margin: auto;
+  height: 3px;
+  width: 1px;
+  background: transparent;
+  transition: width .5s ease;
+  background-color: .5s ease;
 }
 
-.sidebar {
-  margin: 0;
-  padding: 0;
-  color: black;
-   background-color: white;
-  height: 100%;
-  position: fixed;
-  margin-top: 80px;
-  top: 2px;
-  border: black;
-  text-underline-position: below;
-  overflow: auto;
-  scroll-behavior: auto;
-   /* width: 275px; */
-    /* background-color:#333333 ; */
-}
-
-.sb-btn{
-  text-align:left;
+.title:hover:after {
   width: 100%;
-  height: 40px;
-  border: none;
-  background-color: white;
-  margin-bottom: 1px;
-  padding: 5px;
-  overflow: auto;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  /* font-size: medium;
-  /* background: #333333; */
-  /* font-weight: 600; */
+  background:#65666e;
 }
 
-.sidebar-style{
-  text-align: center;
-  padding: 21px;
-}
-
-
-
-.side{
-  /* background-color: darkgray; */
-  
-}
-
-.fixed-side-bar{
-position: fixed;
- text-decoration: none;
- text-align: left;
-  
-}
-.Main-body {
-  background-color: ghostwhite;
-  margin-left: 260px;
-  padding-top: 50px;
-  /* background-color: rgb(251, 249, 249); */
-  padding: 32px;
-  font-family: Arial, Helvetica, sans-serif;
-  /* font-weight: 400; */
-  width: fit-content;
-}
-
-.Content{
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: ghostwhite;
-  /* font-size: medium; */
-  /* text-align: left; */
-  
-}
-
-
-.heading{
-  width: 98%;
-  color:black;
-  /* background-color:  rgb(134, 128, 128); */
-  background-color: rgb(222, 234, 245);
-}
-
-
-.header{
-   background-color:white;
-}
-p.note{
-  text-align: left;
-}
-
-.intro{
-  color:black;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  text-align:left;
-  /* color: aliceblue; */
-}
-  a.intro:hover{
-  text-decoration: none;
-  color: #000000;
-}
-
-.int{
-  text-align: left;
-  text-overflow: clip;
-  font-size: inherit;
-  /* font-weight: 400; */
-  /* width: 226px; */
-  width: 206px;
- padding-bottom:28%;
-}
-
-.col{
-  /* text-align: center; */
+  .heading{
+      width: 156px;
+      color: #4d4a4a;
       text-decoration: none;
-      /* font-size:larger; */
-      flex-basis: 0;
-      flex-grow: 1;
-      max-width: 100%;
-      padding: 2px;
-      width: unset;
-      max-width: 100%;
-      padding: 64px;
-}
+      /* text-align: left; */
+   }
 
-.Header{
-  text-align:flex;
-}
+    .heading:hover{
+      color: black;
+     }
 
-.logo-image{
-    height: 55px;
-    width: auto;
-}
+    p.note{
+    text-align: left;
+    padding: 6px;
+    }
+    p.mt-1:active{
+    background-color: #f5fbff;
+                  }
+    p.mt-1:visited{
+    background-color: #f5fbff;
+    }
 
-.link-style{
-  text-align: center;
-  font-size: large;
-  color: black;
-}
+    .intro{
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    text-align:left;
+    padding: 2px;
+    }
+    a.intro{
+    color: #697386;
+    padding: 2px;
+    }
+                  
+    a.intro:hover{
+    text-decoration: none;
+    color: #111111;
+                    /* color: gold; */
+    }
+    a.intro:active{
+    color: blue;
+                }
 
-.key-style{
-  text-align: center;
-  columns: #000000;;
-  /* font-weight:bold; */
-  /* background-color: rgb(134, 128, 128); */
-  background-color: rgb(222, 234, 245);
-}
 
-.Mod{
+    .int{
+        text-align: left;
+        text-overflow: clip;
+        font-size: inherit;
+        width: 206px;
+        padding-bottom:28%;
+        margin: 0.5rem!important;
+        margin-top: 0.5rem !important;
+     }
+
+    .col{
+  /* text-align: center; */
+    text-decoration: none;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 2px;
+    width: unset;
+    max-width: 100%;
+    padding: 64px;
+    }
+
+    .Header{
+    text-align:flex;
+    }
+
+    .logo-image{
+        justify-content:start ;
+        height: 32px;
+        width: auto;
+        /* padding: 16px; */
+        padding: var(--sp16);
+        padding-right: var(--sp8);
+        }
+
+    .link-style{
+    text-align: center;
+    font-size: large;
+    color: black;
+    }
+
+    .key-style{
+    text-align: left;
+    color: #4d4a4a;
+    text-decoration: none;
+    }
+    .key-style:hover{
+    color: black;
+                  }
+
+    .Mod{
     text-align: left;
     /* font-size:medium; */
-}
-.mod p{
+    }
+
+    .mod p{
     text-align: center;
-}
+    }
 
-.parameter{
-     border: initial;
-}
-.query{
+    .parameter{
+    border: initial;
+    }
+    .query
+                  {
     font-size: medium;
     text-align: left;
-}
-.method{
+    }
+    .method
+    {
     text-align: left;
     font-size: medium;
-}
-.title{
-  text-align: center;
-  /* font-size: medium; */
-  font-weight: bold;
-  background-color:rgb(222, 234, 245) ;
-  text-transform: uppercase;
-}
-.link-style{
-  padding: 2px;
-  color: black;
-}
-.nav-link {
-  display: block;
-  padding: 1.5rem 5rem !important;
+    }
 
-}
-a.nav-link {
-  font-weight: bold;
-  color: black;
-}
+    .title
+    {
+    text-align:left;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    }
+    .title:hover{
+    color: #2a2f45;
+    }
+    .link-style{
+    padding: 2px;
+    color: black;
+    text-align: right;
+    }
+    .nav-link {
+    display: block;
+    padding: 1.5rem 5rem !important;
 
-a.intro{
-  color: #000000;
-}
+    }
+    a.nav-link {
+    font-weight: bold;
+    color: black;
+    }
+
+    .gito {
+    text-align: left;
+    padding: 4px;
+    padding-left: 9px;
+    }
+
+    p.p-gito
+    {
+    text-align: left;
+    padding: 50px;
+    padding-left: 0px;
+    margin: 9px;
+    margin-top: -50px;
+    }
+
+    body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    tbody{
+    padding: 10px;
+    }
+
+    .copyright
+    {
+    background-color:rgb(44, 44, 44);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    }
+
+
+
+ --header.css--
+
+              .Header
+              {
+                display: flex;
+                /* justify-content: center; */
+              }
+              .mr-auto
+              {
+                text-align: center;
+                font-size: large;
+                font-weight: bold;
+                color: black;
+                height: 55px;
+              }
+              .fixed-top 
+              {
+                /* position: fixed; */
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 1030;
+                padding: 2px;
+              }
+
+              .sub-authentication
+              {
+                text-align: left;
+                padding: 0;
+              }
+
+
+              .string
+              {
+                 text-align: left;
+              }
+
+              .http
+            {
+                text-align: left;
+            }
+
+              .Response
+              {
+                text-align: left;
+              }
+
+              .text-center.copyright
+               {
+                /* background-color: rgb(206, 240, 235); */
+                background-color: rgb(241, 245, 239);
+                text-align: center;
+                color: black;
+                padding: 10px;
+              }
+
+              .method-intro
+              {
+                text-align: left;
+                width: 18%;
+              }
+
+            

@@ -1,27 +1,34 @@
 import React, { Component } from 'react'
+import { Navbar, Nav } from 'react-bootstrap';
 
 export default class Authentication extends Component {
    
     render() {
         return (
+            
             <div className="Main-body">
-             <div className="Content ">
-                         <h3 className="ml-3 mt-4 text-center">GITOAI</h3>
-                                <p className="pt-3" > Gito provides a smart integrated platform that can host all aggregated business models (Retailer, Marketplace, Market Exchange).</p>
-                                <p>  Gito brings to life a concept that essentially powers all e-commerce models employed globally into a single hosted platform. Our e-commerce platform provides group commerce capabilities in each of 3 business models utilized within the industry (retail, marketplace, market exchange) that can be used at the discretion of any online seller anywhere!
+                <div>
+                <Navbar bg="white"  expand="lg">
+                    <a className="sub-main" href="/">About Us</a>                       
+               </Navbar>
+                </div>
+                     <div className="Content ">
+                         <h2 className="sub-content">GITOAI</h2>
+                                <p className="gito"> Gito provides a smart integrated platform that can host all aggregated business models (Retailer, Marketplace, Market Exchange).</p>
+                                <p className="p-gito">  Gito brings to life a concept that essentially powers all e-commerce models employed globally into a single hosted platform. Our e-commerce platform provides group commerce capabilities in each of 3 business models utilized within the industry (retail, marketplace, market exchange) that can be used at the discretion of any online seller anywhere!
                          </p>
 
                                  <div className="Authentication"  id="1">
                                         <br></br>
-                                        <h3 className= "text-center">INTRODUCTION</h3>
+                                        <h4  className="line-style" >INTRODUCTION</h4>
                                 </div>
                                      <div>
-                                          <h4>Authentication - Summary</h4>
-                         
-                                            <p>Gito's Partners (API Developers) will be provided with a client_id and a client_secret as part of their registration with Gito.</p>
-                                            <p className="summary">Each API call will be associated to a particular store.As such, each API call will begin with ../V1/ .The partner will have to send the client_id and a client_secret for using in each API call. </p>
+                                          <h4 className="line-style" >Authentication - Summary</h4>
+                                            <p className="p-a">Gito's Partners (API Developers) will be provided with a client_id and a client_secret as part of their registration with Gito.</p>
+                                            <p className="sub-authentication">Each API call will be associated to a particular store.As such, each API call will begin with ../V1/ .The partner will have to send the client_id and a 
+                                             client_secret for using in each API call. </p>
                                                 <br></br>
-                                              <h4>IMPORTANT NOTE:</h4>
+                                              <h4 className="line-style">Important Note:</h4>
                                                <p className="note">
                                                     client_id and client_secret are associated with Gito's Partners (API Developers) only.
                                                     The client_id and client_sec ret provided to partners can be used to access data of ALL stores that have granted the partner access.
@@ -31,7 +38,7 @@ export default class Authentication extends Component {
                                                      <br></br>
                                                         <div className="string" id="2">
                                                             <br></br>
-                                                             <h4>Include by query string</h4>
+                                                             <h4 className="line-style">Include by query string</h4>
                                                 
                                                                     <br></br>   <p>An API client can pass list of includes using array or csv string format.</p>
                                                                 <ul>
@@ -44,16 +51,16 @@ export default class Authentication extends Component {
                                                             <br></br>
                                                             {/* <br></br> */}
                                                           <div class="http" id="3">
-                                                                <h4>Allowed HTTPs requests</h4>
+                                                                <h4 className="line-style">Allowed HTTPs requests</h4>
                                                                 <p>Method</p>
                                                                 <p>GET Get resource</p>
                                                                 <p>POST To create resource</p>
                                                                 <p>PUt  Update resource</p>
                                                         </div>
-                                                    <div class="disc" id="4">
+                                                    <div class="Response" id="4">
                                                                 <br></br>
                                                                 <br></br>
-                                                                    <h4>Description Of Usual Server Responses</h4>
+                                                                 <h4 className="line-style">Description Of Usual Server Responses</h4>
                                                               <p>
                                                                     200 OK - the request was successful (some API calls may return 201 instead). <br></br>
                                                                     201 Created - the request was successful and a resource was created.<br></br>

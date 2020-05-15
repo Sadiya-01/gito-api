@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
-import { Button} from 'react-bootstrap';
+import { Button, Navbar, Nav} from 'react-bootstrap';
 
 class Sidebar extends Component {
     constructor(props){
@@ -37,19 +37,27 @@ class Sidebar extends Component {
         return (
         <div>
             <div className="sidebar ">
+                <div className="logo">
+                         <Navbar bg="white" border="black" expand="lg" >
+                         <Navbar.Collapse className="justify-content-center">
+                         <Nav>
+                        
+                            <img src={require('../images/logo1.png')} className="logo-image" alt=" Gito.me"  />
+                        </Nav>
+                        
+                        </Navbar.Collapse>
+                       
+                </Navbar>
+            </div>
+            
                 <div className="sidebar-style ">
-                    
                        <h4 className="heading" >Introduction</h4>
                             <div className="int">
-                                                            {/* <Button variant="outline-primary" >Authentication - Summary</Button>{'Authentication - Summary '}
-                                                            <Button variant="outline-primary">Include by query string</Button>{' '}
-                                                            <Button variant="outline-primary"> Allowed HTTPs requests</Button>{' '}
-                                                            <Button variant="outline-primary">Description Of Usual Server Responses</Button>{' #4'} */}
 
-                                     <p class="mt-3"><a className="intro"  href="#1">Authentication - Summary</a></p> 
+                                    <p class="mt-1"><a className="intro" href="#1">Authentication - Summary</a></p> 
                                     <p class="mt-1"><a className="intro" href="#2"> Include by query string </a></p> 
                                     <p class="mt-1"><a className="intro" href="#3"> Allowed HTTPs requests</a> </p> 
-                                    <p class="mt-1"><a className="intro" href="#4">Description Of Usual Server Responses</a></p> 
+                                    <p class="mt-1"><a className="intro" href="#4"> Description Of Usual Server   Responses</a></p> 
                                     
                     {sidebarData.length > 0 ? 
                         Object.keys(sidebarData[0]).map((key) => 
@@ -58,9 +66,9 @@ class Sidebar extends Component {
                             <h5>{key}</h5>
                             </div>
                             {sidebarData[0][key].map((sbData, i)=> 
-                                <button key={sbData.id} className="sb-btn" type="button" onClick={()=>this.sideBarClicked(sbData.id)}>
+                                <p key={sbData.id} className="sb-btn" type="button" onClick={()=>this.sideBarClicked(sbData.id)}>
                                     {sbData.title}
-                                </button>
+                                </p>
                             )}
                             </div>
                           )
