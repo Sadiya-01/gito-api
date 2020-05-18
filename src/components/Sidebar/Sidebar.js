@@ -38,14 +38,12 @@ class Sidebar extends Component {
         <div>
             <div className="sidebar ">
                 <div className="logo">
-                         <Navbar bg="white" border="black" expand="lg" >
+              <Navbar bg="white" border="black" expand="lg" >
                          <Navbar.Collapse className="justify-content-center">
                          <Nav>
-                        
                             <img src={require('../images/logo1.png')} className="logo-image" alt=" Gito.me"  />
-                        </Nav>
-                        
-                        </Navbar.Collapse>
+                         </Nav>
+                         </Navbar.Collapse>
                        
                 </Navbar>
             </div>
@@ -72,7 +70,7 @@ class Sidebar extends Component {
                             )}
                             </div>
                           )
-                          :null}
+                             :null}
                          </div>
                     </div>
                 </div>

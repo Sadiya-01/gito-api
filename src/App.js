@@ -10,13 +10,12 @@ import Authentication from './components/intoduction/home';
   render() {
     return (
       <div>
-
             <Authentication/>
             <Dump/>
             <Footer/>
+ 
       </div>
     )
   }
 }
 export default App;
-

@@ -36,8 +36,10 @@
     }
 
   .sidebar-style{
+    /* justify-content: flex-start; */
         text-align: center;
         padding: 11px;
+        /* padding: .5em 1em .25em; */
   }
 
      .sb-btn:hover{
@@ -60,6 +62,7 @@
         color: #4d4a4a;
         text-decoration: none;
       }
+      
       .key-style:hover{
         color: black;
       }
@@ -67,7 +70,11 @@
          
           border: solid 2px #97a1b3;
           width:210px;
-      }
-
-      
-      
+      }  
+   .term{
+     background-color: #225987;
+     color: #97a1b3;
+     text-align: center;
+     text-decoration: none;
+     
+   }

@@ -11,8 +11,8 @@ export default class Footer extends Component{
                                  Copyright © 2020 | All Rights Reserved. 
                                  Powered by <a href="http://gito.me" target="_blank" style={{color:'#fcaa1a'}} className="t600">Gito.Me</a>
                     </span>
-                     </div>
-</div>
+                      </div>
+                </div>
             </div>
         )
     }

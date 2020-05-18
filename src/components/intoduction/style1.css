@@ -1,4 +1,4 @@
-    body{
+  body{
       text-align: center;
       margin: 0;
       padding: 0;
@@ -13,6 +13,7 @@
     padding: 32px;
     font-family: Arial, Helvetica, sans-serif;
     width: fit-content;
+    line-height: 2.0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .sub-main{
@@ -20,17 +21,20 @@
     text-align: right;
     padding: 2px;
     }
+
     a.sub-main{
-    justify-content: right;
-    width: 400%;
+    /* justify-content: right; */
+    width: 90%;
     font-size: large;
     font-weight: 500;
     }
+
     .sub-main:hover{
     /* color: #556cd6; */
     color:  black;
     text-decoration: none;
     }
+
     .Content{
     width: 100%;
     padding-right: 15px;
@@ -40,21 +44,23 @@
     background-color: white;
     color: #4f566b;
     }
-                        /* margin: 20px 0px 24px */
-                        /* background-color: ghostwhite; */
-                        /* font-size: medium; */
-                        /* text-align: left; */
-                        /* margin: 20px 0px 24px */
+/* margin: 20px 0px 24px */
+/* background-color: ghostwhite; */
+ /* font-size: medium; */
+/* text-align: left; */
+/* margin: 20px 0px 24px */
     
 
     .sub-content{
     color: #2a2f45;
     padding-left: 7px;
     }
+
     h2.sub-content{
     display: inline-block;
     position: relative;
     }
+
     h2.sub-content:after {
     content: '';
     display: block;
@@ -111,7 +117,7 @@
   display:flex ;
   margin: auto;
   height: 3px;
-  width: 1px;
+  width: 0px;
   background: transparent;
   transition: width .5s ease;
   background-color: .5s ease;
@@ -135,8 +141,9 @@
 
     p.note{
     text-align: left;
-    padding: 6px;
+    padding: 4px;
     }
+
     p.mt-1:active{
     background-color: #f5fbff;
                   }
@@ -151,6 +158,7 @@
     text-align:left;
     padding: 2px;
     }
+
     a.intro{
     color: #697386;
     padding: 2px;
@@ -161,6 +169,7 @@
     color: #111111;
                     /* color: gold; */
     }
+
     a.intro:active{
     color: blue;
                 }
@@ -192,14 +201,15 @@
     text-align:flex;
     }
 
-    .logo-image{
-        justify-content:start ;
-        height: 32px;
-        width: auto;
-        /* padding: 16px; */
-        padding: var(--sp16);
-        padding-right: var(--sp8);
-        }
+  .logo-image {
+  justify-content:start ;
+  height: 32px;
+  width: auto;
+  /* padding: 16px; */
+  padding: var(--sp16);
+  padding-right: var(--sp8);
+
+  }
 
     .link-style{
     text-align: center;
@@ -212,27 +222,29 @@
     color: #4d4a4a;
     text-decoration: none;
     }
+
     .key-style:hover{
     color: black;
-                  }
+    }
 
-    .Mod{
+    .Mod {
     text-align: left;
     /* font-size:medium; */
     }
 
-    .mod p{
+    .mod p {
     text-align: center;
     }
 
-    .parameter{
+    .parameter {
     border: initial;
     }
     .query
-                  {
+    {
     font-size: medium;
     text-align: left;
     }
+
     .method
     {
     text-align: left;
@@ -246,19 +258,22 @@
     text-transform: uppercase;
     /* text-decoration: underline; */
     }
+
     .title:hover{
     color: #2a2f45;
     }
-    .link-style{
+
+    .link-style {
     padding: 2px;
     color: black;
     text-align: right;
     }
+
     .nav-link {
     display: block;
     padding: 1.5rem 5rem !important;
-
     }
+
     a.nav-link {
     font-weight: bold;
     color: black;
@@ -273,15 +288,17 @@
     p.p-gito
     {
     text-align: left;
-    padding: 50px;
+    padding: 68px;
     padding-left: 0px;
     margin: 9px;
-    margin-top: -50px;
+    margin-top: -68px;
+    /* width: 97.5%; */
     }
 
-    body{
+    body {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+
     tbody{
     padding: 10px;
     }
@@ -298,64 +315,80 @@
 
  --header.css--
 
-              .Header
-              {
-                display: flex;
-                /* justify-content: center; */
-              }
-              .mr-auto
-              {
-                text-align: center;
-                font-size: large;
-                font-weight: bold;
-                color: black;
-                height: 55px;
-              }
-              .fixed-top 
-              {
-                /* position: fixed; */
-                top: 0;
-                right: 0;
-                left: 0;
-                z-index: 1030;
-                padding: 2px;
-              }
+.Header
+    {
+    display: flex;
+    /* justify-content: center; */
+    }
 
-              .sub-authentication
-              {
-                text-align: left;
-                padding: 0;
-              }
+    /* .mr-auto
+    {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    background-color=red;
+    height: 55px;
+    } */
+
+      .fixed-top 
+    {
+/* position: fixed; */
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 2px;
+    }
+
+    .sub-authentication
+    {
+    text-align: left;
+    padding: 0;
+    }
+      
+
+    .string
+    {
+    text-align: left;
+    }
+
+    .http
+    {
+    text-align: left;
+    }
+
+    .Response
+      {
+    text-align: left;
+    /* margin-top: -32px; */
+    }
+    
+
+    .text-center.copyright
+    {
+    /* background-color: rgb(206, 240, 235); */
+    background-color: rgb(241, 245, 239);
+    text-align: center;
+    color: black;
+    padding: 10px;
+    }
+
+    .method-intro
+    {
+    text-align: left;
+    width: 18%;
+    }
 
 
-              .string
-              {
-                 text-align: left;
-              }
+    /* @media screen and (max-width: 600px) {
+      .Content{
+           clear: both;
+       font-size: 1rem;
+      }
+  } */
+@media screen and (max-width:1024){
+  .Main-body{
 
-              .http
-            {
-                text-align: left;
-            }
-
-              .Response
-              {
-                text-align: left;
-              }
-
-              .text-center.copyright
-               {
-                /* background-color: rgb(206, 240, 235); */
-                background-color: rgb(241, 245, 239);
-                text-align: center;
-                color: black;
-                padding: 10px;
-              }
-
-              .method-intro
-              {
-                text-align: left;
-                width: 18%;
-              }
-
-            
+  }
+}

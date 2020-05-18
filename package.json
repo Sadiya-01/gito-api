@@ -8,14 +8,18 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "dark-mode": "^3.0.0",
+    "emotion-theming": "^10.0.27",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-burger-menu": "^2.6.13",
+    "react-dark-theme": "^1.1.1",
     "react-dom": "^16.13.1",
     "react-responsive": "^8.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "sidebar": "^1.0.2"
+    "sidebar": "^1.0.2",
+    "theme-provider": "^1.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
