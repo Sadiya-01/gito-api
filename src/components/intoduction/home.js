@@ -13,7 +13,9 @@ export default class Authentication extends Component {
                </Navbar>
                 </div>
                      <div className="Content ">
-                         <h2 className="sub-content">GITOAI</h2>
+                         <div className="sub">
+                             <h2 className="sub-content">GITOAI</h2>
+                         </div>
                                 <p className="gito"> Gito provides a smart integrated platform that can host all aggregated business models (Retailer, Marketplace, Market Exchange).</p>
                                 <p className="p-gito"> Gito brings to life a concept that essentially powers all e-commerce models employed globally into a single hosted platform. Our e-commerce platform provides group commerce capabilities in each of 3 business models utilized within the industry (retail, marketplace, market exchange) that can be used at the discretion of any online seller anywhere!
                          </p>
@@ -23,12 +25,18 @@ export default class Authentication extends Component {
                                         <h4  className="line-style" >INTRODUCTION</h4>
                                 </div>
                                      <div>
-                                          <h4 className="line-style" >Authentication - Summary</h4>
+                                         <div className="summary">
+                                                 <h4 className="line-style" >Authentication - Summary</h4>
+                                          </div>
                                             <p className="p-a">Gito's Partners (API Developers) will be provided with a client_id and a client_secret as part of their registration with Gito.</p>
                                             <p className="sub-authentication">Each API call will be associated to a particular store.As such, each API call will begin with ../V1/ .The partner will have to send the client_id and a 
                                              client_secret for using in each API call. </p>
                                                 <br></br>
+
+                                                <div className=" important-note">
                                               <h4 className="line-style">Important Note:</h4>
+                                              </div>
+
                                                <p className="note">
                                                     client_id and client_secret are associated with Gito's Partners (API Developers) only.
                                                     The client_id and client_sec ret provided to partners can be used to access data of ALL stores that have granted the partner access.
@@ -47,7 +55,7 @@ export default class Authentication extends Component {
                                                                     <li>For sub-resource inclusion, client can use dot(.) notation.</li>
                                                                     <li>e.g. /books?include=author,publisher.something else</li>
                                                                 </ul>
-                                                            </div>
+                                                         </div>
                                                             <br></br>
                                                             {/* <br></br> */}
                                                           <div class="http" id="3">

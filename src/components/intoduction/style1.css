@@ -340,13 +340,23 @@
     z-index: 1030;
     padding: 2px;
     }
-
+    .sub{
+      text-align: left;
+    }
+    .Authentication{
+      text-align: left;
+    }
+    .summary{
+      text-align: left;
+    }
     .sub-authentication
     {
     text-align: left;
     padding: 0;
     }
-      
+      .important-note{
+        text-align: left;
+      }
 
     .string
     {
@@ -381,14 +391,3 @@
     }
 
 
-    /* @media screen and (max-width: 600px) {
-      .Content{
-           clear: both;
-       font-size: 1rem;
-      }
-  } */
-@media screen and (max-width:1024){
-  .Main-body{
-
-  }
-}
