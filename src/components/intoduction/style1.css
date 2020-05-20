@@ -63,7 +63,7 @@
     background-color: white;
     color: #4f566b;
     line-height: 24px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #cdc5c5;
     }
 
     
@@ -188,11 +188,10 @@
                     /* color: gold; */
     }
 
-    a.intro:active{
-    color: blue;
+    a.intro.selected{
+    background-color: blue;
                 }
-
-
+                
     .int{
         text-align: left;
         text-overflow: clip;
