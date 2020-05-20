@@ -6,8 +6,12 @@
   .sidebar {
     margin: 0;
     padding: 0;
-    color: black;
-    background-color: white;
+    color:black;
+    /* background-color: white; */
+    /* background-color:#f4f7fa; */
+    background-color: #F2F6EE;
+    
+     /* background-color: #333333; */
     height: 100%;
     position: fixed;
     margin-top: -13px;
@@ -18,16 +22,20 @@
     scroll-behavior: auto;
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 240px;
-   
+    /* width: 256px; */
+    border-right: 3px solid #dee2e6;
   }
+ 
 
   .sb-btn{
         text-align:left;
         width: 100%;
         height: 40px;
         border: none;
-        background-color: white;
+        /* background-color: white; */
+        /* background-color: #fafcfe; */
+        /* background-color: #f4f7fa; */
+        background-color: #F2F6EE;
         margin-bottom: 1px;
         padding: 5px;
         overflow: auto;
@@ -46,14 +54,15 @@
      color:rgb(7, 7, 7);
   }
 
-         p.sb-btn:active{
-        color: blue;
+  p.sb-btn:active{
+  color: blue;
   }
-         p.sb-btn:active{
-        background-color: #f5fbff;
+   p.sb-btn:active{
+   background-color: #f5fbff;
     }
-        p.sb-btn:visited{
-        background-color: #f5fbff;
+  p.sb-btn:visited
+  {
+  background-color: #f5fbff;
     }
 
     
@@ -66,15 +75,11 @@
       .key-style:hover{
         color: black;
       }
+
       .logo{
-         
-          border: solid 2px #97a1b3;
-          width:210px;
+
+    /* border: solid 2px #97a1b3; */
+    /* width:210px; */
+    border-bottom: 3px solid #dee2e6;
       }  
-   .term{
-     background-color: #225987;
-     color: #97a1b3;
-     text-align: center;
-     text-decoration: none;
-     
-   }
+   

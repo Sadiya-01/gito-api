@@ -7,19 +7,23 @@ export default class Authentication extends Component {
         return (
             
             <div className="Main-body">
-                <div>
-                <Navbar bg="white"  expand="lg">
-                    <a className="sub-main" href="target_blank">About Us</a>                       
-               </Navbar>
+                <div >
+                    <div className="about-header">
+                        <Navbar  expand="lg">
+                            <a className="sub-main" href="target_blank">About Us</a>                       
+                       </Navbar>
+                       </div>
                 </div>
                      <div className="Content ">
                          <div className="sub">
                              <h2 className="sub-content">GITOAI</h2>
                          </div>
                                 <p className="gito"> Gito provides a smart integrated platform that can host all aggregated business models (Retailer, Marketplace, Market Exchange).</p>
-                                <p className="p-gito"> Gito brings to life a concept that essentially powers all e-commerce models employed globally into a single hosted platform. Our e-commerce platform provides group commerce capabilities in each of 3 business models utilized within the industry (retail, marketplace, market exchange) that can be used at the discretion of any online seller anywhere!
+                                <p className="p-gito"> Gito brings to life a concept that essentially powers all e-commerce models employed globally into a single hosted platform. Our e-commerce platform provides 
+                                 group commerce capabilities in each of 3 business models utilized within the industry (retail, marketplace, market exchange) that can be used at the discretion of any online 
+                                 seller anywhere!
                          </p>
-
+                                
                                  <div className="Authentication"  id="1">
                                         <br></br>
                                         <h4  className="line-style" >INTRODUCTION</h4>
@@ -60,32 +64,34 @@ export default class Authentication extends Component {
                                                             {/* <br></br> */}
                                                           <div class="http" id="3">
                                                                 <h4 className="line-style">Allowed HTTPs requests</h4>
-                                                                <p>Method</p>
-                                                                <p>GET Get resource</p>
-                                                                <p>POST To create resource</p>
-                                                                <p>PUT  Update resource</p>
-                                                                
+                                                                <ul>
+                                                                <li>Method</li>
+                                                                <li>GET Get resource</li>
+                                                                <li>POST To create resource</li>
+                                                                <li>PUT  Update resource</li>
+                                                                </ul>
                                                         </div>
                                                               <div class="Response" id="4">
                                                                     <br></br>
                                                                     <br></br>
                                                                  <h4 className="line-style">Description Of Usual Server Responses</h4>
-                                                              <p>
-                                                                    200 OK - the request was successful (some API calls may return 201 instead). <br></br>
-                                                                    201 Created - the request was successful and a resource was created.<br></br>
-                                                                    204 No Content - the request was successful but there is no representation to return(i.e. the response is empty).<br></br>
-                                                                    400 Bad Request - the request could not be understood or was missing required parameters.<br></br>
-                                                                    401 Unauthorized - authentication failed or user doesn't have permissions for requested operation.<br></br>
-                                                                    403 Forbidden - access denied.<br></br>
-                                                                    404 Not Found - resource was not found.<br></br>
-                                                                    405 Method Not Allowed - requested method is not supported for resource.<br></br>
+                                                              <p className="sub-response">
+                                                                  <ul>
+                                                                   <li> 200 OK - the request was successful (some API calls may return 201 instead).</li> 
+                                                                   <li>201 Created - the request was successful and a resource was created.</li>
+                                                                   <li>204 No Content - the request was successful but there is no representation to return(i.e. the response is empty).</li>
+                                                                   <li> 400 Bad Request - the request could not be understood or was missing required parameters.</li>
+                                                                   <li> 401 Unauthorized - authentication failed or user doesn't have permissions for requested operation.</li>
+                                                                   <li>403 Forbidden - access denied.</li>
+                                                                   <li>404 Not Found - resource was not found.</li>
+                                                                   <li>405 Method Not Allowed - requested method is not supported for resource.</li>
+                                                                   </ul>
                                                              </p>   
                                                                
                                                     </div>
                                              </div>
                                         </div>
                                    </div>
-                              
                          
         )
     }
