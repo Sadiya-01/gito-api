@@ -6,17 +6,19 @@ export default class Authentication extends Component {
     render() {
         return (
             
-            <div className="Main-body">
-                <div >
-                    <div className="about-header">
-                        <Navbar  expand="lg">
-                            <a className="sub-main" href="target_blank">About Us</a>                       
-                       </Navbar>
+                 <div class="Head" >
+                    <div className="text-right about-header">
+                    
+                            <a className="sub-main" href="target_blank">About Us</a>       
+                            <a className="sub-main" href="https://www.gito.me/contactus">Contact Us</a>                  
+                       
                        </div>
-                </div>
-                     <div className="Content ">
+            <div className="Main-body">
+               
+            
+                     <div className="col-sm-6">
                          <div className="sub">
-                             <h2 className="sub-content">GITOAI</h2>
+                             <h1 className="sub-content">GITOAI</h1>
                          </div>
                                 <p className="gito"> Gito provides a smart integrated platform that can host all aggregated business models (Retailer, Marketplace, Market Exchange).</p>
                                 <p className="p-gito"> Gito brings to life a concept that essentially powers all e-commerce models employed globally into a single hosted platform. Our e-commerce platform provides 
@@ -26,19 +28,20 @@ export default class Authentication extends Component {
                                 
                                  <div className="Authentication"  id="1">
                                         <br></br>
-                                        <h4  className="line-style" >INTRODUCTION</h4>
+                                        <h2  className="line-style" >INTRODUCTION</h2>
                                 </div>
                                      <div>
                                          <div className="summary">
-                                                 <h4 className="line-style" >Authentication - Summary</h4>
+                                                 <h3 className="line-style" >Authentication - Summary</h3>
                                           </div>
                                             <p className="p-a">Gito's Partners (API Developers) will be provided with a client_id and a client_secret as part of their registration with Gito.</p>
-                                            <p className="sub-authentication">Each API call will be associated to a particular store.As such, each API call will begin with ../V1/ .The partner will have to send the client_id and a 
-                                             client_secret for using in each API call. </p>
+                                            <p className="sub-authentication">Each API call will be associated to a particular store.As such, each API call will begin with ../V1/ .The partner will have to send 
+                                            the client_id and a client_secret for using in each API call. </p>
+                                             
                                                 <br></br>
 
                                                 <div className=" important-note">
-                                              <h4 className="line-style">Important Note:</h4>
+                                              <h3 className="line-style">Important Note:</h3>
                                               </div>
 
                                                <p className="note">
@@ -50,8 +53,9 @@ export default class Authentication extends Component {
                                                      <br></br>
                                                         <div className="string" id="2">
                                                             <br></br>
-                                                             <h4 className="line-style">Include by query string</h4>
-                                                
+                                                            <div className="sub-string">
+                                                             <h3 className="line-style">Include by query string</h3>
+                                                             </div>
                                                                  <br></br>   <p>An API client can pass list of includes using array or csv string format.</p>
                                                                 <ul>
                                                                     <li>e.g. /authors?include[]=books:limit(2|0)&include[]=comments:sort(id|asc)</li>
@@ -63,7 +67,9 @@ export default class Authentication extends Component {
                                                             <br></br>
                                                             {/* <br></br> */}
                                                           <div class="http" id="3">
-                                                                <h4 className="line-style">Allowed HTTPs requests</h4>
+                                                              <div className="sub-http">
+                                                                <h3 className="line-style">Allowed HTTPs requests</h3>
+                                                                </div>
                                                                 <ul>
                                                                 <li>Method</li>
                                                                 <li>GET Get resource</li>
@@ -74,7 +80,9 @@ export default class Authentication extends Component {
                                                               <div class="Response" id="4">
                                                                     <br></br>
                                                                     <br></br>
-                                                                 <h4 className="line-style">Description Of Usual Server Responses</h4>
+                                                                    <div className="auto-response">
+                                                                 <h3 className="line-style">Description Of Usual Server Responses</h3>
+                                                                 </div>
                                                               <p className="sub-response">
                                                                   <ul>
                                                                    <li> 200 OK - the request was successful (some API calls may return 201 instead).</li> 
@@ -92,6 +100,9 @@ export default class Authentication extends Component {
                                              </div>
                                         </div>
                                    </div>
+                                   
+                                </div>
+                            
                          
         )
     }
