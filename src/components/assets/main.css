@@ -99,6 +99,7 @@ body{
     border-bottom: 1px solid #f3f6f8;
     /* font-weight: 700; */
     text-align: left;
+    background-color:lightgrey;
 }
 .parameter.api-index-item-title {
   width: 16%;
@@ -110,6 +111,7 @@ body{
 }
 #apidoc-method{
   margin: 0.83em ;
+
   text-decoration: underline;
 }
 .Query-parameters,.Method-parameters{

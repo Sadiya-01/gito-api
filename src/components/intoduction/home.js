@@ -17,6 +17,7 @@ export default class Authentication extends Component {
                
             
                      <div className="col-sm-6">
+                     <div className="Content">
                          <div className="sub">
                              <h1 className="sub-content">GITOAI</h1>
                          </div>
@@ -97,11 +98,13 @@ export default class Authentication extends Component {
                                                              </p>   
                                                                
                                                     </div>
+                                              </div>
+                                                  </div>
                                              </div>
                                         </div>
                                    </div>
                                    
-                                </div>
+                                
                             
                          
         )

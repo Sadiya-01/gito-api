@@ -71,7 +71,7 @@
     }
 
     .Content{
-    width: 80%;
+    /* width: 80%; */
     padding-right: 50px;
     padding-left: 50px;
     /* margin-right: auto;
@@ -332,10 +332,12 @@
       /* width: 95%; */
   }
 .col-sm-6{
-  /* width: 80%; */
+  width: 75%;
     padding-top: 40px;
     padding-left: 45px;
     border-bottom: 1px solid #cdc5c5;
+    color: #697386;
+    line-height: 24px;
    
 }
 /* .col-sm-7{
@@ -429,7 +431,6 @@
     {
     text-align: left;
     }
-
     .sub-http{
       margin-bottom: 25px;
     }
@@ -456,7 +457,6 @@
     text-align: center;
     color: black;
     padding: 10px;
-    
     }
 
     .method-intro
