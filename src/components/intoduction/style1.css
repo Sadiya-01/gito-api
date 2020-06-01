@@ -180,13 +180,13 @@
     /* text-align: left; */
     /* padding: 4px; */
     text-align: justify;
-    /* width: 103%; */
+    width: 92%;
     }
 
     p.mt-1:active{
     background-color: #f5fbff; 
     }
-    
+
     p.mt-1:visited{
     background-color: #f5fbff;
     }
@@ -207,12 +207,12 @@
     a.intro:hover{
     text-decoration: none;
     color: #111111;
-                    /* color: gold; */
+  /* color: gold; */
     }
 
     a.intro.selected{
     background-color: blue;
-                }
+   }
                 
     .int{
         text-align: left;
@@ -322,7 +322,7 @@
 
     .gito {
     text-align:justify;
-    /* width: 77%; */
+    width: 93%;
     /* padding: 4px; */
     /* padding-left: 9px; */
     }
@@ -331,7 +331,7 @@
   text-align: justify;
   /* width: 83%; */
   padding-left: 0px;
-   width: 94%;
+   width: 99%;
   }
 
 .col-sm-6{
@@ -454,6 +454,7 @@ tbody{
     }
     .subresponse{
       text-align: left;
+      width: 90%;
     }
     .p-a{
       text-align: left;
