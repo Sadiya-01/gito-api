@@ -48,7 +48,9 @@ class Sidebar extends Component {
                        
                 </Navbar>
             </div>
-            
+            <div class="scrollbar">
+    <div class="overflow">
+  
                 <div className="sidebar-style ">
                        <h4 className="heading" >Introduction</h4>
                             <div className="int">
@@ -76,6 +78,8 @@ class Sidebar extends Component {
                     </div>
                 </div>
             </div>
+            </div>
+            </div> 
             
         )
     }

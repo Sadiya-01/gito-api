@@ -99,7 +99,7 @@ body{
     border-bottom: 1px solid #f3f6f8;
     /* font-weight: 700; */
     text-align: left;
-    background-color:lightgrey;
+    background-color:rgb(235, 232, 232);
 }
 .parameter.api-index-item-title {
   width: 16%;

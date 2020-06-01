@@ -16,8 +16,10 @@ export default class Authentication extends Component {
             <div className="Main-body">
                
             
-                     <div className="col-sm-6">
+                     {/* <div className="col-sm-7"> */}
+                     
                      <div className="Content">
+                     <div className="col-sm-6">
                          <div className="sub">
                              <h1 className="sub-content">GITOAI</h1>
                          </div>
@@ -85,7 +87,7 @@ export default class Authentication extends Component {
                                                                  <h3 className="line-style">Description Of Usual Server Responses</h3>
                                                                  </div>
                                                               <p className="sub-response">
-                                                                  <ul>
+                                                                  <ul className="subresponse">
                                                                    <li> 200 OK - the request was successful (some API calls may return 201 instead).</li> 
                                                                    <li>201 Created - the request was successful and a resource was created.</li>
                                                                    <li>204 No Content - the request was successful but there is no representation to return(i.e. the response is empty).</li>
@@ -103,6 +105,7 @@ export default class Authentication extends Component {
                                              </div>
                                         </div>
                                    </div>
+                                    
                                    
                                 
                             

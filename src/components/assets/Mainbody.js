@@ -48,7 +48,7 @@ class Mainbody extends Component {
         return (
             <div>
                 <div className="Main-body" >
-                   <div className ="col-sm-6">
+                   <div className ="col-sm-8">
                         { mainbodyData.length > 0 ?
                         Object.keys(mainbodyData[0]).map((key) => 
                             <div>
