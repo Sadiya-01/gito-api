@@ -46,9 +46,14 @@ class Mainbody extends Component {
     render() {
         const {mainbodyData} = this.state;
         return (
-            <div>
-                <div className="Main-body" >
-                   <div className ="col-sm-8">
+            
+            <div className="">    
+                <div className="col-sm-12">       
+            <div className="Main-body" >
+                
+               
+                       
+                    <div className ="col-sm-8">
                         { mainbodyData.length > 0 ?
                         Object.keys(mainbodyData[0]).map((key) => 
                             <div>
@@ -183,8 +188,15 @@ class Mainbody extends Component {
                      :null}
                     </div>
                     
+                    </div>
                 </div>
-            </div>
+                
+                    
+                    </div>
+                
+            
+            
+         
         )
     }
 }

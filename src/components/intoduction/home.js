@@ -34,20 +34,20 @@ export default class Authentication extends Component {
                                         <h2  className="line-style" >INTRODUCTION</h2>
                                 </div>
                                      <div>
-                                         <div className="summary">
+                                        <div className="summary">
                                                  <h3 className="line-style" >Authentication - Summary</h3>
                                           </div>
                                             <p className="p-a">Gito's Partners (API Developers) will be provided with a client_id and a client_secret as part of their registration with Gito.</p>
                                             <p className="sub-authentication">Each API call will be associated to a particular store.As such, each API call will begin with ../V1/ .The partner will have to send 
                                             the client_id and a client_secret for using in each API call. </p>
                                              
-                                                <br></br>
+                                                <br></br> 
 
                                                 <div className=" important-note">
                                               <h3 className="line-style">Important Note:</h3>
                                               </div>
 
-                                               <p className="note">
+                                            <p className="note">
                                                     client_id and client_secret are associated with Gito's Partners (API Developers) only.
                                                     The client_id and client_sec ret provided to partners can be used to access data of ALL stores that have granted the partner access.
                                                     There are no separate client_id or client_secret associated with the stores.
@@ -87,7 +87,7 @@ export default class Authentication extends Component {
                                                                  <h3 className="line-style">Description Of Usual Server Responses</h3>
                                                                  </div>
                                                               <p className="sub-response">
-                                                                  <ul className="subresponse">
+                                                                <ul className="subresponse">
                                                                    <li> 200 OK - the request was successful (some API calls may return 201 instead).</li> 
                                                                    <li>201 Created - the request was successful and a resource was created.</li>
                                                                    <li>204 No Content - the request was successful but there is no representation to return(i.e. the response is empty).</li>
@@ -96,7 +96,7 @@ export default class Authentication extends Component {
                                                                    <li>403 Forbidden - access denied.</li>
                                                                    <li>404 Not Found - resource was not found.</li>
                                                                    <li>405 Method Not Allowed - requested method is not supported for resource.</li>
-                                                                   </ul>
+                                                                </ul>
                                                              </p>   
                                                                
                                                     </div>

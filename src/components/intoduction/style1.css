@@ -11,19 +11,16 @@
 
     .about-header{
       /* justify-content: right;
-      width: 104%;
-      background-color: #fbfbfb;
-      padding-top: 9px;
-      margin-top: -30px;
-      padding-right: 72px;
-      margin: -25px; */
+      /* width: 104%; */
+      
       padding: 30px;
-      /* background-color: lightgrey; */
-      /* background-color: #c7c5c5; */
+      border-bottom: 1px solid #cbc6c6 !important;
       background-color: rgb(235, 232, 232);
       height:100px;
+      /* background-color: lightgrey; */
+      /* background-color: #c7c5c5; */
+     
     
-      /* background-color: #F2F6EE; */
   }
 
 
@@ -179,8 +176,11 @@
     .note{
     /* text-align: left; */
     /* padding: 4px; */
-    text-align: justify;
-    width: 92%;
+    /* text-align: justify;
+    width: 92%; */
+      display: flex;
+      text-align: justify;
+      width: 82%;
     }
 
     p.mt-1:active{
@@ -458,7 +458,7 @@ tbody{
     }
     .p-a{
       text-align: left;
-      width: 95%;
+      width: 93%;
     }
 
     .text-center.copyright
@@ -484,4 +484,5 @@ tbody{
       }
       .col-sm-8{
         color: #697386;
+        padding-left: 45px;
       }
