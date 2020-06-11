@@ -46,17 +46,13 @@ class Mainbody extends Component {
     render() {
         const {mainbodyData} = this.state;
         return (
-            
-            <div className="">    
-                <div className="col-sm-12">       
-            <div className="Main-body" >
-                
-               
-                       
-                    <div className ="col-sm-8">
+            <div>
+                <div className="Main-body" >
+                   <div className ="col-sm-12">
                         { mainbodyData.length > 0 ?
                         Object.keys(mainbodyData[0]).map((key) => 
-                            <div>
+                            <div className="row">
+                            <div className="col-md-8">
                                 <h3>{}</h3>
                                 {mainbodyData[0][key].map((mbData, i)=>
                                     <div className="data"  style={{paddingTop: '5px'}} id={`mbData${mbData.id}`} ref={el => (this.idRefs[mbData.id] = el)}>
@@ -184,6 +180,16 @@ class Mainbody extends Component {
                                     
                                 )}
                            </div> 
+                           <div className="col-md-4 p-3 border box">
+                               <p>Output</p>
+                               <pre>
+                                    assets
+                                    as
+                                    assets
+                                    as
+                               </pre>
+                           </div>
+                           </div>
                         )
                      :null}
                     </div>
@@ -192,7 +198,8 @@ class Mainbody extends Component {
                 </div>
                 
                     
-                    </div>
+                    // </div>
+        
                 
             
             

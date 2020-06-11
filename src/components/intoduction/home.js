@@ -19,7 +19,7 @@ export default class Authentication extends Component {
                      {/* <div className="col-sm-7"> */}
                      
                      <div className="Content">
-                     <div className="col-sm-6">
+                     <div className="">
                          <div className="sub">
                              <h1 className="sub-content">GITOAI</h1>
                          </div>

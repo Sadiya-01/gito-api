@@ -10,17 +10,11 @@
     } */
 
     .about-header{
-      /* justify-content: right;
-      /* width: 104%; */
-      
       padding: 30px;
       border-bottom: 1px solid #cbc6c6 !important;
       background-color: rgb(235, 232, 232);
       height:100px;
-      /* background-color: lightgrey; */
-      /* background-color: #c7c5c5; */
-     
-    
+      
   }
 
 
@@ -120,7 +114,7 @@
     color:rgba(5, 4, 4, 0.945);
     }
             
-    .line-style {
+    .line-style{
       display: inline-block;
       position: relative;
   }
@@ -138,7 +132,7 @@
 
   .line-style:hover:after {
     width: 100%;
-    background:#2a2f45;
+    background:#697386;
   }
 
   .title {
@@ -155,6 +149,7 @@
   background: transparent;
   transition: width .5s ease;
   background-color: .5s ease;
+  color: #697386;
 }
 
 .title:hover:after {
@@ -174,10 +169,7 @@
      }
 
     .note{
-    /* text-align: left; */
-    /* padding: 4px; */
-    /* text-align: justify;
-    width: 92%; */
+   
       display: flex;
       text-align: justify;
       width: 82%;
@@ -301,7 +293,7 @@
     }
 
     .title:hover{
-    color: #2a2f45;
+    color: #697386;
     }
 
     .link-style {
@@ -331,7 +323,7 @@
   text-align: justify;
   /* width: 83%; */
   padding-left: 0px;
-   width: 99%;
+   width: 84%;
   }
 
 .col-sm-6{
@@ -415,8 +407,14 @@ tbody{
     {
       text-align: justify;
       padding: 0;
-      /* width: 92%; */
+      width: 76%;
       /* width: 99%; */
+  }
+  .List{
+    color: #697386;
+  }
+  .List:hover{
+    color: black;
   }
 
   .important-note{
