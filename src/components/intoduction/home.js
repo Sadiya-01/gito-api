@@ -100,11 +100,11 @@ export default class Authentication extends Component {
                                                              </p>   
                                                                
                                                     </div>
-                                              </div>
-                                                  </div>
+                                                 </div>
                                              </div>
                                         </div>
-                                   </div>
+                                     </div>
+                                 </div>
                                     
                                    
                                 
