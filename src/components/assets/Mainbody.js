@@ -88,16 +88,17 @@ class Mainbody extends Component {
                                                                     <>
                                                                         <tr>
                                                                             <th className="api-index-title" scope="column">Parameter </th>
-                                                                            <th className="api-index-title" scope="column">Description </th>
                                                                             <th className="api-index-title" scope="column">Type </th>
+                                                                            <th className="api-index-title" scope="column">Description </th>
+                                                                    
                                                                             
                                                                             
                                                                         </tr>
                                                                         <tr className="api-index-item"> 
                                                                             {/* <th>Description : </th> */}
                                                                             <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
-                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
                                                                             <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
                                                                         </tr>
                                                                         
                                                                     </>
@@ -124,16 +125,16 @@ class Mainbody extends Component {
                                                                                         {mbData.details[key].map((paramDet, l)=>
                                                                                         <>
                                                                                           <tr>
-                                                                                            <th className="api-index-title" scope="column">Parameter </th>
-                                                                                            <th className="api-index-title" scope="column">Description </th>
-                                                                                            <th className="api-index-title" scope="column">Type </th>
+                                                                                          <th className="api-index-title" scope="column">Parameter </th>
+                                                                                          <th className="api-index-title" scope="column">Type </th>
+                                                                                           <th className="api-index-title" scope="column">Description </th>
                                                                                                     
                                                                                         </tr>
                                                                                         
                                                                                      <tr className="api-index-item">
-                                                                                         <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
-                                                                                         <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
-                                                                                         <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
+                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
                                                                                      </tr>
 
                                                                                         
@@ -160,16 +161,16 @@ class Mainbody extends Component {
                                                                             <>
                                                                             <>
                                                                             <tr>
-                                                                                 <th className="api-index-title" scope="column">Parameter </th>
-                                                                                 <th className="api-index-title" scope="column">Description </th>
-                                                                                 <th className="api-index-title" scope="column">Type </th>
+                                                                            <th className="api-index-title" scope="column">Parameter </th>
+                                                                            <th className="api-index-title" scope="column">Type </th>
+                                                                            <th className="api-index-title" scope="column">Description </th>
                                                                                     
                                                                                  </tr>
                                                                                  <tr className="api-index-item">
                                                                                 
-                                                                                    <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
-                                                                                    <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
-                                                                                    <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                                 <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
+                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
                                                                                 </tr>
                                                                                 
                                                                                 

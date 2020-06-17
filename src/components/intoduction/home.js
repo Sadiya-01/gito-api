@@ -9,7 +9,7 @@ export default class Authentication extends Component {
                  <div class="Head" >
                     <div className="text-right about-header">
                     
-                            <a className="sub-main" href="target_blank">About Us</a>       
+                            <a className="sub-main" href="https://www.gito.me/">About Us</a>       
                             <a className="sub-main" href="https://www.gito.me/contactus">Contact Us</a>                  
                        
                        </div>
