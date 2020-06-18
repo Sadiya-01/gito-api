@@ -114,9 +114,7 @@ body{
 
   text-decoration: underline;
 }
-.Query-parameters,.Method-parameters{
+.Query-parameters,.Method-parameters,.Request-parameters{
   margin-bottom: 60px;
-}
-.Request-parameters{
-  margin-top: 60px;
+  width: 50%;
 }
