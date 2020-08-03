@@ -49,9 +49,9 @@ class Sidebar extends Component {
                 </Navbar>
             </div>
             <div class="scrollbar">
-    <div class="overflow">
+                 <div class="overflow">
   
-                <div className="sidebar-style ">
+                 <div className="sidebar-style ">
                        <h4 className="heading" >Introduction</h4>
                             <div className="int">
 
@@ -67,7 +67,7 @@ class Sidebar extends Component {
                             <h5>{key}</h5>
                             </div>
                             {sidebarData[0][key].map((sbData, i)=> 
-                                <p key={sbData.id} className="sb-btn" type="button" onClick={()=>this.sideBarClicked(sbData.id)}>
+                                <p key={sbData.id} className="sb-btn sidebar-btn" type="button" onClick={()=>this.sideBarClicked(sbData.id)}>
                                     {sbData.title}
                                 </p>
                             )}

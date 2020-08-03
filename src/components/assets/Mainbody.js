@@ -133,8 +133,8 @@ class Mainbody extends Component {
                                                                                         
                                                                                      <tr className="api-index-item">
                                                                                      <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
-                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
-                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
+                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
                                                                                      </tr>
 
                                                                                         
@@ -144,7 +144,7 @@ class Mainbody extends Component {
                                                                      </table>
                                                                 </section>
                                                                 :null}
-                                                        </div>
+                                                            </div>
                                                     
                                                     
                                                             <div>
@@ -185,9 +185,11 @@ class Mainbody extends Component {
                                                             </div> 
                                                             
                                                             {key == 'Response Result'?
-                                                            <div className="col-md-4 p-3 border box float-right">
+                                                            <div className="scrollbar">
+                                                            <div className="col-md-4 p-3  border box float-right">
                                                                  <h5>Response Result:</h5>
                                                                  {mbData.details[key]}
+                                                            </div>
                                                             </div>
                                                             :null} 
                                                             
@@ -206,7 +208,7 @@ class Mainbody extends Component {
                            
                              {/* <div className="  col-md-4 p-3 border box float-right " >
                                <p>Output</p>
-                               <pre>
+                               <pre> 
                                     assets<br></br>
                                     as<br></br>
                                     assets<br></br>

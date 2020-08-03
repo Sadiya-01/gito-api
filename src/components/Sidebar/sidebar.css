@@ -30,7 +30,7 @@
   .sb-btn{
         text-align:left;
         width: 100%;
-        height: 40px;
+        /* height: 40px; */
         border: none;
         background-color: white;
         /* background-color: #fafcfe; */
@@ -38,7 +38,7 @@
         /* background-color: #F2F6EE; */
         margin-bottom: 1px;
         padding: 5px;
-        overflow: auto;
+        /* overflow: auto; */
         color: #697386;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
