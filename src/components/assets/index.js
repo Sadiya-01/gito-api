@@ -11,6 +11,7 @@ class Dump extends Component {
     }
 
     sideBarClicked = (id) => {
+        console.log(id,'indexxxxxxxxxxxxxxxxxxxxx')
         this.setState({
             id: id
         })

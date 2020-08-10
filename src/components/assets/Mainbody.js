@@ -24,7 +24,7 @@ class Mainbody extends Component {
     }
 
     static getDerivedStateFromProps(props){
-        //console.log(props);
+        console.log(props,'@propsssss');
         return{
             id: props.id
         }        
@@ -45,189 +45,182 @@ class Mainbody extends Component {
    
     render() {
         const {mainbodyData} = this.state;
+        console.log(mainbodyData,'@mdataaa')
         return (
             <div>
                  {/* <div className ="col-sm-12"> */}
-                <div className="Main-body" >
+                <div className="Main-body col-sm-8" >
                    <div className ="">
                         { mainbodyData.length > 0 ?
-                         Object.keys(mainbodyData[0]).map((key) => 
-                        
-                            <div className="row">
-                                <div className="col-md-12 float-left" >
-                                    <h3>{}</h3>
-                                    {mainbodyData[0][key].map((mbData, i)=>
-                                    <div className="data"  style={{paddingTop: '5px'}} id={`mbData${mbData.id}`} ref={el => (this.idRefs[mbData.id] = el)}>
-                                        <h1>{mbData.module}</h1>
-                                        <div className="Mod">
-                                            <div className="title">
-                                                <h3 className="List">{mbData.title}</h3 >
-                                            </div>                                             
-                                            <p><b>DESCRIPTION :</b>{mbData.details.description}</p>
-                                            <p><b>METHOD :</b>{mbData.details.method}</p>
-                                            <p><b>URL :</b>{mbData.details.url}</p><br></br>
-                                                
-                                         </div>
-                                            {
-                                             Object.keys(mbData.details).map((key,j ) =>{
-                                                    {/*console.log(mbData.details[key],"32")*/}
-                                                    return(
-                                                 <div className="method">
-                                                
-                                                    {key == 'Method Parameters'? 
-                                                    <section className="Method-parameters">
-                                                        <h5 id="apidoc-method">Method Parameter</h5>
-                                                        <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
-                                                            
-                                                            {/* {key} */}
-                                                            
-                                                            <tbody>
-                                                                {mbData.details[key].map((paramDet, l)=>{
-                                                                    // console.log(paramDet,"56")
-                                                                    return(
-                                                                    <>
-                                                                        <tr>
-                                                                            <th className="api-index-title" scope="column">Parameter </th>
-                                                                            <th className="api-index-title" scope="column">Type </th>
-                                                                            <th className="api-index-title" scope="column">Description </th>
-                                                                    
+                         Object.keys(mainbodyData[0]).map((key) => {
+                            // console.log(mainbodyData[0][key],'@567')
+                            Object.keys(mainbodyData[0][key]).map((mbData) => {
+                                // console.log(mainbodyData[0][key][mbData].id,'@weeee')
+                                // console.log(mbData,'@45698')
+                                if(mainbodyData[0][key][mbData].id==this.state.id){
+                                       console.log(mainbodyData[0][key][mbData].title)
+                                    return(
+                                
+                                        <div className="data"  style={{paddingTop: '5px'}} >
+                                            <h1>{mainbodyData[0][key][mbData].module}</h1>
+                                            <div className="Mod">
+                                                    <div className="title">
+                                                        <h3 className="List">{mainbodyData[0][key][mbData].title}</h3 >
+                                                    </div>  
                                                                             
-                                                                            
-                                                                        </tr>
-                                                                        <tr className="api-index-item"> 
-                                                                            {/* <th>Description : </th> */}
-                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
-                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
-                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
-                                                                        </tr>
-                                                                        
-                                                                    </>
-                                                                    )
-                                                                }
-                                                                )}
-                                                            </tbody>
-                                                        </table>
-                                                 </section>
-                                                        :null}
-
-                                                        {/* </div> */}
+                                                    <p><b>DESCRIPTION :</b>{mainbodyData[0][key][mbData].details&& mainbodyData[0][key][mbData].details.description!==null?mainbodyData[0][key][mbData].details.description:null}</p>
+                                                    <p><b>METHOD :</b>{mainbodyData[0][key][mbData].details&&mainbodyData[0][key][mbData].details.method!==null?mainbodyData[0][key][mbData].details.method:null}</p>
+                                                    <p><b>URL :</b>{mainbodyData[0][key][mbData].details&&mainbodyData[0][key][mbData].details.url!==null?mainbodyData[0][key][mbData].details.url:null}</p><br></br>
+                                            </div>
+                                                {
+                                                Object.keys(mainbodyData[0][key][mbData].details).map((value,j ) =>{
+                                                        {/*console.log(mbData.details[key],"32")*/}
+                                                        return(
+                                                    <div className="method">
                                                     
-                                                        <div className="query">                         
-                                                             {key == 'Query Parameters'?
-                                                             <section className="Query-parameters">
-                                                                     <h5 id="apidoc-method">Query Parameter</h5>
-                                                                     <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
-                                                                       
+                                                        {value == 'Method Parameters'? 
+                                                        <section className="Method-parameters">
+                                                            <h5 id="apidoc-method">Method Parameter</h5>
+                                                            <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
+                                                                
+                                                                {/* {key} */}
+                                                                
+                                                                <tbody>
+                                                                    {mainbodyData[0][key][mbData].details[value].map((paramDet, l)=>{
+                                                                        // console.log(paramDet,"56")
+                                                                        return(
+                                                                        <>
+                                                                            <tr>
+                                                                                <th className="api-index-title" scope="column">Parameter </th>
+                                                                                <th className="api-index-title" scope="column">Type </th>
+                                                                                <th className="api-index-title" scope="column">Description </th>
+                                                                        
+                                                                                
+                                                                                
+                                                                            </tr>
+                                                                            <tr className="api-index-item"> 
+                                                                                {/* <th>Description : </th> */}
+                                                                                <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
+                                                                                <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                                <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
+                                                                            </tr>
+                                                                            
+                                                                        </>
+                                                                        
+                                                                        )
+                                                                    }
+                                                                    )}
+                                                                </tbody>
+                                                            </table>
+                                                    </section>
+                                                            :null}
+
+                                                            {/* </div> */}
+                                                        
+                                                            <div className="query">                         
+                                                                {key == 'Query Parameters'?
+                                                                <section className="Query-parameters">
+                                                                        <h5 id="apidoc-method">Query Parameter</h5>
+                                                                        <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
+                                                                        
+                                                                                {/* <thead> 
+                                                                                    <tr>{key}</tr>
+                                                                                </thead> */}
+                                                                                <tbody>
+                                                                                            {mainbodyData[0][key][mbData].details[value].map((paramDet, l)=>
+                                                                                            <>
+                                                                                            <tr>
+                                                                                            <th className="api-index-title" scope="column">Parameter </th>
+                                                                                            <th className="api-index-title" scope="column">Type </th>
+                                                                                            <th className="api-index-title" scope="column">Description </th>
+                                                                                                        
+                                                                                            </tr>
+                                                                                            
+                                                                                        <tr className="api-index-item">
+                                                                                        <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
+                                                                                        <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                                        <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
+                                                                                        </tr>
+
+                                                                                            
+                                                                                            </>
+                                                                                        )}
+                                                                                </tbody>
+                                                                        </table>
+                                                                    </section>
+                                                                    :null}
+                                                                </div>
+                                                        
+                                                        
+                                                                <div>
+                                                                    
+                                                                    {key == 'Request Parameters'?
+                                                                    <section className="Request-parameters">
+                                                                        <h5 id="apidoc-method">Request Parameter</h5>
+                                                                        <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
                                                                             {/* <thead> 
-                                                                                <tr>{key}</tr>
+                                                                            <tr>{key}</tr>
                                                                             </thead> */}
                                                                             <tbody>
-                                                                                        {mbData.details[key].map((paramDet, l)=>
-                                                                                        <>
-                                                                                          <tr>
-                                                                                          <th className="api-index-title" scope="column">Parameter </th>
-                                                                                          <th className="api-index-title" scope="column">Type </th>
-                                                                                           <th className="api-index-title" scope="column">Description </th>
-                                                                                                    
-                                                                                        </tr>
+                                                                                {mainbodyData[0][key][mbData].details[value].map((paramDet, l)=>
+                                                                                <>
+                                                                                <>
+                                                                                <tr>
+                                                                                <th className="api-index-title" scope="column">Parameter </th>
+                                                                                <th className="api-index-title" scope="column">Type </th>
+                                                                                <th className="api-index-title" scope="column">Description </th>
                                                                                         
-                                                                                     <tr className="api-index-item">
-                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
-                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
-                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
-                                                                                     </tr>
-
-                                                                                        
-                                                                                        </>
-                                                                                    )}
-                                                                             </tbody>
-                                                                     </table>
-                                                                </section>
-                                                                :null}
-                                                            </div>
-                                                    
-                                                    
-                                                            <div>
-                                                                
-                                                                {key == 'Request Parameters'?
-                                                                <section className="Request-parameters">
-                                                                    <h5 id="apidoc-method">Request Parameter</h5>
-                                                                    <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
-                                                                        {/* <thead> 
-                                                                         <tr>{key}</tr>
-                                                                        </thead> */}
-                                                                        <tbody>
-                                                                            {mbData.details[key].map((paramDet, l)=>
-                                                                            <>
-                                                                            <>
-                                                                            <tr>
-                                                                            <th className="api-index-title" scope="column">Parameter </th>
-                                                                            <th className="api-index-title" scope="column">Type </th>
-                                                                            <th className="api-index-title" scope="column">Description </th>
+                                                                                    </tr>
+                                                                                    <tr className="api-index-item">
                                                                                     
-                                                                                 </tr>
-                                                                                 <tr className="api-index-item">
-                                                                                
-                                                                                 <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
-                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
-                                                                            <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
-                                                                                </tr>
-                                                                                
-                                                                                
-                                                                            </>
-                                                                            </>
-                                                                         )}
-                                                                     </tbody>
-                                                                   </table>
-                                                                </section>
-                                                                :null}
+                                                                                    <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
+                                                                                <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                                <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
+                                                                                    </tr>
+                                                                                    
+                                                                                    
+                                                                                </>
+                                                                                </>
+                                                                            )}
+                                                                        </tbody>
+                                                                    </table>
+                                                                    </section>
+                                                                    :null}
+                                                                    
+                                                                </div> 
                                                                 
-                                                            </div> 
-                                                            
-                                                            {key == 'Response Result'?
-                                                            <div className="scrollbar">
-                                                            <div className="col-md-4 p-3  border box float-right">
-                                                                 <h5>Response Result:</h5>
-                                                                 {mbData.details[key]}
-                                                            </div>
-                                                            </div>
-                                                            :null} 
-                                                            
-                                                 </div>
+                                                                {key == 'Response Result'?
+                                                                <div className="scrollbar">
+                                                                <div className="col-md-4 p-3  border box float-right">
+                                                                    <h5>Response Result:</h5>
+                                                                    {mainbodyData[0][key][mbData].details[value]}
+                                                                </div>
+                                                                </div>
+                                                                :null} 
+                                                                
+                                                    </div>
+                                                    
+                                                    )
+                                                })
                                                 
-                                                )
-                                            })
-                                            
-                                        }
-                                        {/* {console.log(mbData.details, '123')} */}
-                                    
-                                    </div>
-                                    
-                                )}
-                             </div> 
+                                            }
+                                            {/* {console.log(mbData.details, '123')} */}
+                                        
+                                        </div>
+                                )}else{
+                                    return(<div>dddddddd</div>)
+                                }
+                            })
+                         }
+                        
                            
-                             {/* <div className="  col-md-4 p-3 border box float-right " >
-                               <p>Output</p>
-                               <pre> 
-                                    assets<br></br>
-                                    as<br></br>
-                                    assets<br></br>
-                                    as
-                               </pre>
-                           </div> */}
-                           </div>
-                         
-                        )
-                     :null}
-                    </div>
-                    
-                    </div>
-                </div>
                 
-                    
-                    // </div>
+                         ):null}
+                    </div>
+                 </div>
+            </div>
         
-                
+        
             
             
          

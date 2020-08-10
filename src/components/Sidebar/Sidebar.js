@@ -16,23 +16,26 @@ class Sidebar extends Component {
         Axios.get('http://api-docs.gitodemos.com/api/docs/list.php')
         .then((result)=>{
             this.setState({sidebarData:result.data})
-            //console.log(result.data[0])
+            // console.log(result,'yessss')
         })
     }
     
 
     sideBarClicked = (id) => {
+        console.log(id,'@idddd')
         this.props.sidebarClicked(id)
+        
     }
 
 
     render(){
         
         const {sidebarData} = this.state;
-        sidebarData.length > 0 &&
-        Object.keys(sidebarData[0]).map((key)=>  
-        console.log(sidebarData[0][key],'yes')
-        )
+        // sidebarData.length > 0 &&
+        // Object.keys(sidebarData[0]).map((key)=>  
+        // console.log(sidebarData[0][key],'yes')
+        // console.log(sidebarData[0],'side')
+        // )
         
         return (
         <div>
@@ -61,25 +64,49 @@ class Sidebar extends Component {
                                     <p class="mt-1"><a className="intro" href="#4"> Description Of Usual Server   Responses</a></p> 
                                     
                     {sidebarData.length > 0 ? 
-                        Object.keys(sidebarData[0]).map((key) => 
+                        Object.keys(sidebarData[0]).map((key) => {
+                            // console.log(sidebarData[0][key],'@9999')
+                                return(
+                                    
                         <div className="side-data">
                             <div className="key-style">
                             <h5>{key}</h5>
                             </div>
-                            {sidebarData[0][key].map((sbData, i)=> 
+                            {Object.keys(sidebarData[0][key]).map((value,i) =>{
+                                // console.log(sidebarData[0][key][value].id,'@sidebardata')
+                                return(
+                                    <p key={i} className="sb-btn sidebar-btn" type="button" onClick={()=>this.sideBarClicked(sidebarData[0][key][value].id)}>
+                                        
+                                    {sidebarData[0][key][value].title}
+                                </p>
+                                )
+                                // console.log(sidebarData[0][key][value].title,'@12344')
+                            }
+                            
+                            )}
+                            {/* {sidebarData[0][key]?sidebarData[0][key].map((sbData, i)=> 
                                 <p key={sbData.id} className="sb-btn sidebar-btn" type="button" onClick={()=>this.sideBarClicked(sbData.id)}>
                                     {sbData.title}
                                 </p>
-                            )}
+                                console.log(sidebarData[0])
+                            ):null} */}
                             </div>
+                                )
+                            
+                        }
                           )
                              :null}
                          </div>
                     </div>
                 </div>
-            </div>
-            </div>
-            </div> 
+             </div>
+        </div>
+        {/* { sidebarData.length > 0 ? 
+            Object.keys(sidebarData[0]).map((key) => 
+            console.log(sidebarData[0][key],'@124')
+            ):null
+        } */}
+  </div> 
             
         )
     }

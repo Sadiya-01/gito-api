@@ -13,7 +13,7 @@ export default class Authentication extends Component {
                             <a className="sub-main" href="https://www.gito.me/contactus">Contact Us</a>                  
                        
                        </div>
-            <div className="Main-body">
+            <div className="Main-body col-md-8">
                
             
                      {/* <div className="col-sm-7"> */}
