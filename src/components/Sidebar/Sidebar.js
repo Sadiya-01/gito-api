@@ -16,7 +16,7 @@ class Sidebar extends Component {
         Axios.get('http://api-docs.gitodemos.com/api/docs/list.php')
         .then((result)=>{
             this.setState({sidebarData:result.data})
-            // console.log(result,'yessss')
+            console.log(result,'yessss')
         })
     }
     

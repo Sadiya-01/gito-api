@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Sidebar from '../Sidebar/Sidebar'
-import MainBody from '../assets/mainbody'
+import MainBody from '../assets/Mainbody'
 
 class Dump extends Component {
     constructor(props){

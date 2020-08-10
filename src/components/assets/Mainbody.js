@@ -32,14 +32,14 @@ class Mainbody extends Component {
   
     componentDidUpdate(prev, nex){
         //console.log(this.state.id, 'id');
-        if(this.state.id !== null){
-            if(document.querySelector(`#mbData${this.state.id}`)){
-                console.log(document.querySelector(`#mbData${this.state.id}`).getBoundingClientRect(), 'click');
+        // if(this.state.id !== null){
+        //     if(document.querySelector(`#mbData${this.state.id}`)){
+        //         console.log(document.querySelector(`#mbData${this.state.id}`).getBoundingClientRect(), 'click');
                 
-                document.querySelector(`#mbData${this.state.id}`).scrollIntoView()
-                window.scrollBy(0, -70); 
-            }
-        }
+        //         document.querySelector(`#mbData${this.state.id}`).scrollIntoView()
+        //         window.scrollBy(0, -70); 
+        //     }
+        // }
     }   
 
    
@@ -50,18 +50,17 @@ class Mainbody extends Component {
             <div>
                  {/* <div className ="col-sm-12"> */}
                 <div className="Main-body col-sm-8" >
-                   <div className ="">
+                    <div className ="">
                         { mainbodyData.length > 0 ?
-                         Object.keys(mainbodyData[0]).map((key) => {
-                            // console.log(mainbodyData[0][key],'@567')
-                            Object.keys(mainbodyData[0][key]).map((mbData) => {
-                                // console.log(mainbodyData[0][key][mbData].id,'@weeee')
-                                // console.log(mbData,'@45698')
-                                if(mainbodyData[0][key][mbData].id==this.state.id){
-                                       console.log(mainbodyData[0][key][mbData].title)
-                                    return(
-                                
-                                        <div className="data"  style={{paddingTop: '5px'}} >
+                            Object.keys(mainbodyData[0]).map((key) => {
+                                return(
+                                    <div> 
+                                    {Object.keys(mainbodyData[0][key]).map((mbData) => {
+                                        console.log(mainbodyData[0][key][mbData].id,this.state.id,'@weeee')
+                                        // console.log(mbData,'@45698')
+                                        if(mainbodyData[0][key][mbData].id==this.state.id){
+                                            return(
+                                                <div className="data"  style={{paddingTop: '5px'}} >
                                             <h1>{mainbodyData[0][key][mbData].module}</h1>
                                             <div className="Mod">
                                                     <div className="title">
@@ -204,18 +203,17 @@ class Mainbody extends Component {
                                                 })
                                                 
                                             }
-                                            {/* {console.log(mbData.details, '123')} */}
                                         
                                         </div>
-                                )}else{
-                                    return(<div>dddddddd</div>)
+                                            )
+                                        }
+                                    })}
+                                    </div>
+                                )
                                 }
-                            })
-                         }
-                        
-                           
-                
-                         ):null}
+                                )
+                            
+                        :null}
                     </div>
                  </div>
             </div>
