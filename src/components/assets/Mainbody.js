@@ -32,14 +32,14 @@ class Mainbody extends Component {
   
     componentDidUpdate(prev, nex){
         //console.log(this.state.id, 'id');
-        // if(this.state.id !== null){
-        //     if(document.querySelector(`#mbData${this.state.id}`)){
-        //         console.log(document.querySelector(`#mbData${this.state.id}`).getBoundingClientRect(), 'click');
+        if(this.state.id !== null){
+            if(document.querySelector(`#mbData${this.state.id}`)){
+                console.log(document.querySelector(`#mbData${this.state.id}`).getBoundingClientRect(), 'click');
                 
-        //         document.querySelector(`#mbData${this.state.id}`).scrollIntoView()
-        //         window.scrollBy(0, -70); 
-        //     }
-        // }
+                document.querySelector(`#mbData${this.state.id}`).scrollIntoView()
+                window.scrollBy(0, -70); 
+            }
+        }
     }   
 
    
@@ -60,7 +60,7 @@ class Mainbody extends Component {
                                         // console.log(mbData,'@45698')
                                         if(mainbodyData[0][key][mbData].id==this.state.id){
                                             return(
-                                                <div className="data"  style={{paddingTop: '5px'}} >
+                                                <div className="data"  style={{paddingTop: '5px'}} id={`mbData+mainbodyData[0][key][mbData].id`}>
                                             <h1>{mainbodyData[0][key][mbData].module}</h1>
                                             <div className="Mod">
                                                     <div className="title">
