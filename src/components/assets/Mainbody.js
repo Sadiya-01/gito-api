@@ -32,14 +32,14 @@ class Mainbody extends Component {
   
     componentDidUpdate(prev, nex){
         //console.log(this.state.id, 'id');
-        // if(this.state.id !== null){
-        //     if(document.querySelector(`#mbData${this.state.id}`)){
-        //         console.log(document.querySelector(`#mbData${this.state.id}`).getBoundingClientRect(), 'click');
+        if(this.state.id !== null){
+            if(document.querySelector(`#mbData${this.state.id}`)){
+                console.log(document.querySelector(`#mbData${this.state.id}`).getBoundingClientRect(), 'click');
                 
-        //         document.querySelector(`#mbData${this.state.id}`).scrollIntoView()
-        //         window.scrollBy(0, -70); 
-        //     }
-        // }
+                document.querySelector(`#mbData${this.state.id}`).scrollIntoView()
+                window.scrollBy(0, -70); 
+            }
+        }
     }   
 
    
@@ -48,8 +48,8 @@ class Mainbody extends Component {
         console.log(mainbodyData,'@mdataaa')
         return (
             <div>
-                 {/* <div className ="col-sm-12"> */}
-                <div className="Main-body" >
+                 {/* {/ <div className ="col-sm-12"> /} */}
+                <div className="Main-body col-sm-8" >
                     <div className ="">
                         { mainbodyData.length > 0 ?
                             Object.keys(mainbodyData[0]).map((key) => {
@@ -60,7 +60,7 @@ class Mainbody extends Component {
                                         // console.log(mbData,'@45698')
                                         if(mainbodyData[0][key][mbData].id==this.state.id){
                                             return(
-                                                <div className="data"  style={{paddingTop: '5px'}} >
+                                                <div className="data"  style={{paddingTop: '5px'}} id={`mbData+mainbodyData[0][key][mbData].id`}>
                                             <h1>{mainbodyData[0][key][mbData].module}</h1>
                                             <div className="Mod">
                                                     <div className="title">
@@ -82,7 +82,7 @@ class Mainbody extends Component {
                                                             <h5 id="apidoc-method">Method Parameter</h5>
                                                             <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
                                                                 
-                                                                {/* {key} */}
+                                                                {/* {/ {key} /} */}
                                                                 
                                                                 <tbody>
                                                                     {mainbodyData[0][key][mbData].details[value].map((paramDet, l)=>{
@@ -98,7 +98,7 @@ class Mainbody extends Component {
                                                                                 
                                                                             </tr>
                                                                             <tr className="api-index-item"> 
-                                                                                {/* <th>Description : </th> */}
+                                                                                {/* {/ <th>Description : </th> /} */}
                                                                                 <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
                                                                                 <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
                                                                                 <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
@@ -114,7 +114,7 @@ class Mainbody extends Component {
                                                     </section>
                                                             :null}
 
-                                                            {/* </div> */}
+                                                            {/* {/ </div> /} */}
                                                         
                                                             <div className="query">                         
                                                                 {key == 'Query Parameters'?
@@ -141,6 +141,7 @@ class Mainbody extends Component {
                                                                                         <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
                                                                                         </tr>
 
+                                                                                            
                                                                                             </>
                                                                                         )}
                                                                                 </tbody>
@@ -226,6 +227,3 @@ class Mainbody extends Component {
 }
 
 export default Mainbody;
-
-
-  
