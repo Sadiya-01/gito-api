@@ -49,7 +49,7 @@ class Mainbody extends Component {
         return (
             <div>
                  {/* <div className ="col-sm-12"> */}
-                <div className="Main-body col-sm-8" >
+                <div className="Main-body">
                    <div className ="">
                         { mainbodyData.length > 0 ?
                          Object.keys(mainbodyData[0]).map((key) => {
@@ -142,7 +142,6 @@ class Mainbody extends Component {
                                                                                         <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
                                                                                         </tr>
 
-                                                                                            
                                                                                             </>
                                                                                         )}
                                                                                 </tbody>
