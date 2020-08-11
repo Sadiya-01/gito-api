@@ -16,7 +16,7 @@ class Sidebar extends Component {
         Axios.get('http://api-docs.gitodemos.com/api/docs/list.php')
         .then((result)=>{
             this.setState({sidebarData:result.data})
-            console.log(result,'yessss')
+            // console.log(result,'yessss')
         })
     }
     
@@ -31,10 +31,10 @@ class Sidebar extends Component {
     render(){
         
         const {sidebarData} = this.state;
-        // sidebarData.length > 0 &&
+        sidebarData.length > 0 &&
         // Object.keys(sidebarData[0]).map((key)=>  
         // console.log(sidebarData[0][key],'yes')
-        // console.log(sidebarData[0],'side')
+        console.log(sidebarData[0],'side')
         // )
         
         return (
@@ -51,8 +51,8 @@ class Sidebar extends Component {
                        
                 </Navbar>
             </div>
-            <div class="scrollbar">
-                 <div class="overflow">
+            <div className="scrollbar">
+                 <div className="overflow">
   
                  <div className="sidebar-style ">
                        <h4 className="heading" >Introduction</h4>

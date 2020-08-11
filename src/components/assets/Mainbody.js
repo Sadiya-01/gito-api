@@ -61,18 +61,20 @@ class Mainbody extends Component {
                                         if(mainbodyData[0][key][mbData].id==this.state.id){
                                             return(
                                                 <div className="data"  style={{paddingTop: '5px'}} id={`mbData+mainbodyData[0][key][mbData].id`}>
-                                            <h1>{mainbodyData[0][key][mbData].module}</h1>
+                                           `` <h1>{mainbodyData[0][key][mbData].module}</h1>
                                             <div className="Mod">
                                                     <div className="title">
                                                         <h3 className="List">{mainbodyData[0][key][mbData].title}</h3 >
                                                     </div>  
-                                                                            
+                                                                    
                                                     <p><b>DESCRIPTION :</b>{mainbodyData[0][key][mbData].details&& mainbodyData[0][key][mbData].details.description!==null?mainbodyData[0][key][mbData].details.description:null}</p>
                                                     <p><b>METHOD :</b>{mainbodyData[0][key][mbData].details&&mainbodyData[0][key][mbData].details.method!==null?mainbodyData[0][key][mbData].details.method:null}</p>
-                                                    <p><b>URL :</b>{mainbodyData[0][key][mbData].details&&mainbodyData[0][key][mbData].details.url!==null?mainbodyData[0][key][mbData].details.url:null}</p><br></br>
+                                                    <p><b>URL :</b>{mainbodyData[0][key][mbData].details&&mainbodyData[0][key][mbData].details.url!==null?mainbodyData[0][key][mbData].details.url:null}</p><br></br> 
                                             </div>
+
                                                 {
-                                                Object.keys(mainbodyData[0][key][mbData].details).map((value,j ) =>{
+
+                                                 Object.keys(mainbodyData[0][key][mbData].details).map((value,j ) =>{
                                                         {/*console.log(mbData.details[key],"32")*/}
                                                         return(
                                                     <div className="method">
@@ -98,7 +100,7 @@ class Mainbody extends Component {
                                                                                 
                                                                             </tr>
                                                                             <tr className="api-index-item"> 
-                                                                                {/* {/ <th>Description : </th> /} */}
+                                                                                {/* <th>Description : </th> */}
                                                                                 <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
                                                                                 <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
                                                                                 <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
@@ -111,13 +113,13 @@ class Mainbody extends Component {
                                                                     )}
                                                                 </tbody>
                                                             </table>
-                                                    </section>
+                                                     </section>
                                                             :null}
 
                                                             {/* {/ </div> /} */}
                                                         
                                                             <div className="query">                         
-                                                                {key == 'Query Parameters'?
+                                                                {value == 'Query Parameters'?
                                                                 <section className="Query-parameters">
                                                                         <h5 id="apidoc-method">Query Parameter</h5>
                                                                         <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
@@ -153,7 +155,7 @@ class Mainbody extends Component {
                                                         
                                                                 <div>
                                                                     
-                                                                    {key == 'Request Parameters'?
+                                                                    {value == 'Request Parameters'?
                                                                     <section className="Request-parameters">
                                                                         <h5 id="apidoc-method">Request Parameter</h5>
                                                                         <table className="api-doc api-doc-query-parameters-parameters api-doc-users">
@@ -172,9 +174,9 @@ class Mainbody extends Component {
                                                                                     </tr>
                                                                                     <tr className="api-index-item">
                                                                                     
-                                                                                    <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
-                                                                                <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
-                                                                                <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
+                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.Parameter}</td>
+                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.type}</td>
+                                                                                     <td scope="row" className="parameter api-index-item-title">{paramDet.description}</td>
                                                                                     </tr>
                                                                                     
                                                                                     
@@ -188,7 +190,7 @@ class Mainbody extends Component {
                                                                     
                                                                 </div> 
                                                                 
-                                                                {key == 'Response Result'?
+                                                                {value == 'Response Result'?
                                                                 <div className="scrollbar">
                                                                 <div className="col-md-4 p-3  border box float-right">
                                                                     <h5>Response Result:</h5>

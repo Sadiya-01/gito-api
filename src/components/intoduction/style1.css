@@ -477,7 +477,13 @@ tbody{
       
     }
     .data{
-      padding: 30px;
+      padding: 0px;
+    }
+    .response-scroll{
+      min-height: 50%;
+      overflow-y: scroll;
+      overflow-x: scroll;
+      scroll-behavior: auto;
     }
     @media only screen and (max-width: 768px){
 
