@@ -27,8 +27,7 @@
     
     .Main-body {
     background-color: white;
-    margin-left: 260px;
-
+    margin-left: 275px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     width: fit-content;
@@ -167,7 +166,7 @@
      }
 
     .note{
-   
+      word-break: keep-all;
       display: flex;
       text-align: justify;
       width: 82%;
@@ -257,10 +256,10 @@
     }
 
     .Mod {
-    text-align: left;
-    
-    /* margin-top: -55px; */
-    /* font-size:medium; */
+      text-align: left;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+  
     }
 
     .mod p {
@@ -314,6 +313,7 @@
     .gito {
     text-align:justify;
     width: 93%;
+    word-break: keep-all;
     /* padding: 4px; */
     /* padding-left: 9px; */
     }
@@ -321,8 +321,8 @@
 .p-gito {
   text-align: justify;
   /* width: 83%; */
-  padding-left: 0px;
-   width: 84%;
+   padding-left: 0px;
+   word-break: keep-all;
   }
 
 .col-sm-6{
@@ -480,10 +480,16 @@ tbody{
       padding: 0px;
     }
     .response-scroll{
-      min-height: 50%;
-      overflow-y: scroll;
-      overflow-x: scroll;
+      max-height: 250px;
+      overflow-y: auto;
+      overflow-x: hidden;
       scroll-behavior: auto;
+      /* overflow: scroll; */
+      word-break: keep-all;
+      background-color: rgb(170, 165, 165);
+      color: rgb(0, 0, 0);
+ 
+  
     }
     @media only screen and (max-width: 768px){
 

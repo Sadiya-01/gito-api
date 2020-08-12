@@ -76,7 +76,7 @@ class Sidebar extends Component {
                                 // console.log(sidebarData[0][key][value].id,'@sidebardata')
                                 return(
                                     <p key={i} className="sb-btn sidebar-btn" type="button" onClick={()=>this.sideBarClicked(sidebarData[0][key][value].id)}>
-                                        
+                                    
                                     {sidebarData[0][key][value].title}
                                 </p>
                                 )
@@ -84,12 +84,7 @@ class Sidebar extends Component {
                             }
                             
                             )}
-                            {/* {sidebarData[0][key]?sidebarData[0][key].map((sbData, i)=> 
-                                <p key={sbData.id} className="sb-btn sidebar-btn" type="button" onClick={()=>this.sideBarClicked(sbData.id)}>
-                                    {sbData.title}
-                                </p>
-                                console.log(sidebarData[0])
-                            ):null} */}
+                            
                             </div>
                                 )
                             

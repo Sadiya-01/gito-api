@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Navbar, Nav } from 'react-bootstrap';
 
+
+
 export default class Authentication extends Component {
    
     render() {
@@ -13,7 +15,7 @@ export default class Authentication extends Component {
                             <a className="sub-main" href="https://www.gito.me/contactus">Contact Us</a>                  
                        
                        </div>
-            <div className="Main-body col-md-8">
+                         <div className="Main-body col-md-8">
                
             
                      {/* <div className="col-sm-7"> */}
@@ -28,7 +30,7 @@ export default class Authentication extends Component {
                                  group commerce capabilities in each of 3 business models utilized within the industry (retail, marketplace, market exchange) that can be used at the discretion of any online 
                                  seller anywhere!
                          </p>
-                                
+                        
                                  <div className="Authentication"  id="1">
                                         <br></br>
                                         <h2  className="line-style" >INTRODUCTION</h2>
@@ -98,7 +100,7 @@ export default class Authentication extends Component {
                                                                    <li>405 Method Not Allowed - requested method is not supported for resource.</li>
                                                                 </ul>
                                                              </p>   
-                                                               
+                                                             
                                                     </div>
                                                  </div>
                                              </div>
