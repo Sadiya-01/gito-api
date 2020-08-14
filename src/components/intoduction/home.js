@@ -51,7 +51,7 @@ export default class Authentication extends Component {
 
                                             <p className="note">
                                                     client_id and client_secret are associated with Gito's Partners (API Developers) only.
-                                                    The client_id and client_sec ret provided to partners can be used to access data of ALL stores that have granted the partner access.
+                                                    The client_id and client_secret provided to partners can be used to access data of ALL stores that have granted the partner access.
                                                     There are no separate client_id or client_secret associated with the stores.
                                                     The REST response are in JSON format.
                                              </p>

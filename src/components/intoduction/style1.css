@@ -407,6 +407,7 @@ tbody{
       text-align: justify;
       padding: 0;
       width: 76%;
+      word-break: keep-all;
       /* width: 99%; */
   }
   .List{
@@ -442,20 +443,24 @@ tbody{
       {
     text-align: left;
     margin-top: -30px;
+    word-break: keep-all;
     }
     .auto-response{
       margin-bottom: 25px;
     }
     .sub-response{
       text-align: justify;
+      word-break: keep-all;
     }
     .subresponse{
       text-align: left;
       width: 90%;
+      word-break: keep-all;
     }
     .p-a{
       text-align: left;
       width: 93%;
+      word-break: keep-all;
     }
 
     .text-center.copyright
@@ -480,17 +485,37 @@ tbody{
       padding: 0px;
     }
     .response-scroll{
-      max-height: 250px;
-      overflow-y: auto;
-      overflow-x: hidden;
-      scroll-behavior: auto;
-      /* overflow: scroll; */
-      word-break: keep-all;
-      background-color: rgb(170, 165, 165);
-      color: rgb(0, 0, 0);
- 
-  
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: auto;
+    word-break: keep-all;
+    background-color: #242726;
+    color:#ffffff;
     }
+    
+ /* width */
+.response-scroll::-webkit-scrollbar {
+  width: 10px
+  ;
+}
+
+/* Track */
+.response-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.response-scroll::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.response-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
     @media only screen and (max-width: 768px){
 
       .Main-body {

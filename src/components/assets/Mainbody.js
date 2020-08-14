@@ -189,14 +189,16 @@ class Mainbody extends Component {
                                                                     :null}
                                                                     
                                                                 </div> 
-                                                                
+  
                                                                 {value == 'Response Result'?
-                                                                <div className="scrollbar ">
-                                                                <div className="col-md-4 p-3 mt-5 mb-5 response-scroll  border box float-right">
-                                                                    <h5>Response Result:</h5>
-                                                                    {mainbodyData[0][key][mbData].details[value]}
-                                                                </div>
-                                                                </div>
+                                                             <div className="scrollbar" id="style-2">
+                                                                    <div className="force-overflow">
+                                                                            <div className="col-md-7 p-3 mt-5 mb-5 response-scroll  border box float-right">
+                                                                                <h5>Response Result:</h5>
+                                                                                {mainbodyData[0][key][mbData].details[value]}
+                                                                            </div>
+                                                                    </div>
+                                                            </div>
                                                                 :null} 
                                                                 
                                                     </div>
